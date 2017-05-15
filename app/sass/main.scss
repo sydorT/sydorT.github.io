@@ -1,0 +1,14 @@
+@import "vars";
+@import "fonts";
+    
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: OpenSans, sans-serif;
+}
+
+a {
+    color: $white;
+}
