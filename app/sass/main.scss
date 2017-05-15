@@ -98,7 +98,13 @@ nav.navbar {
             background-color: darken($blue, 10%);            
             border-radius: 5px;
             box-shadow: 0 3px 0 darken($blue, 20%);
-        }        
-    }
-    
+        }      
+    }   
+}
+// SLIDER
+.container-fluid {
+    padding: 0;
+    img {
+       width: 100%; 
+    }    
 }

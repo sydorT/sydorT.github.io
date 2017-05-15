@@ -85,3 +85,8 @@ nav.navbar {
             border-radius: 5px;
     -webkit-box-shadow: 0 3px 0 #3e9991;
             box-shadow: 0 3px 0 #3e9991; }
+
+.container-fluid {
+  padding: 0; }
+  .container-fluid img {
+    width: 100%; }
