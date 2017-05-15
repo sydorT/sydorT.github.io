@@ -47,14 +47,38 @@ nav.navbar {
     padding-top: 10px;
     padding-bottom: 10px;
     margin: 22px 2px; }
-  nav.navbar ul.navbar-nav li.active a, nav.navbar ul.navbar-nav li.active a:hover {
+  nav.navbar ul.navbar-nav li.dropdown a:hover, nav.navbar ul.navbar-nav li.dropdown a:focus, nav.navbar ul.navbar-nav li.dropdown a:active, nav.navbar ul.navbar-nav li.dropdown a:visited {
+    color: #ffffff;
+    background-color: #e96259;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    -webkit-box-shadow: 0 3px 0 #c2241a;
+            box-shadow: 0 3px 0 #c2241a; }
+  nav.navbar ul.navbar-nav li.dropdown ul.dropdown-menu {
+    background-color: #e3372c;
+    -webkit-border-top-left-radius: 5px;
+            border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+            border-top-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+    left: 0;
+    right: auto;
+    padding-top: 0;
+    padding-bottom: 0; }
+    nav.navbar ul.navbar-nav li.dropdown ul.dropdown-menu li a {
+      margin: 5px;
+      background-color: #e96259; }
+  nav.navbar ul.navbar-nav li.active a, nav.navbar ul.navbar-nav li.active a:hover, nav.navbar ul.navbar-nav li.active a:focus {
     color: #ffffff;
     background-color: #52b8af;
     -webkit-border-radius: 5px;
             border-radius: 5px;
     -webkit-box-shadow: 0 3px 0 #3e9991;
             box-shadow: 0 3px 0 #3e9991; }
-  nav.navbar ul.navbar-nav a:hover {
+  nav.navbar ul.navbar-nav a:hover, nav.navbar ul.navbar-nav a:focus, nav.navbar ul.navbar-nav a:active {
     color: #ffffff;
     background-color: #52b8af;
     -webkit-border-radius: 5px;
