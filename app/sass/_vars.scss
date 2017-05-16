@@ -1,3 +1,11 @@
 $blue: #76c7c0;
 $red: #e96259;
 $white: #ffffff;
+
+@mixin btn {
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    color: #ffffff;
+    border: 0;
+}

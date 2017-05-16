@@ -1,15 +1,20 @@
 @import "vars";
 @import "fonts";
-    
+// COMMON STYLES    
 * {
     box-sizing: border-box;
     outline: none!important;
 }
-
 body {
     font-family: OpenSans, sans-serif;
+    background-color: #f3f3f3;
 }
-
+h1, h2, h3 {
+    color: #7f8c8c;
+}
+p {
+    color: #777777;
+}
 a {
     color: $white;
         &:hover {
@@ -21,23 +26,21 @@ a {
 
 nav.navbar {
     border: 0;
+    background: url(../img/top_line.png) bottom left repeat-x;    
     background-color: $blue;
     margin: 0;
     height: 80px;
-    border-radius: 0;   
-    
+    border-radius: 0;  
     //LOGO
     h1 {
         float: left;
-        margin: 0;
-        
+        margin: 0;        
         a.navbar-brand {
             color: $white;
             font-size: 25px;
             padding-top: 0;
             margin-top: 30px;
-            font-weight: 400;
-        
+            font-weight: 400;        
             &:hover {
                 color: $white;
             }
@@ -56,55 +59,161 @@ nav.navbar {
             font-weight: 600;
             text-transform: uppercase;
             color: $white;
-            padding-top: 10px;
-            padding-bottom: 10px;
+            padding-top: 9px;
+            padding-bottom: 8px;
             margin: 22px 2px;            
-        }
-        li.dropdown {
-            a:hover, a:focus, a:active, a:visited {
-                color: $white;
-                background-color: $red;
-                border-radius: 5px;
-                box-shadow: 0 3px 0 darken($red, 20%);
-                
-            }
-            ul.dropdown-menu {
-                background-color: darken($red, 10%);                
-                border-top-left-radius: 5px;
-                border-top-right-radius: 5px;
-                border-bottom-left-radius: 5px;
-                border-bottom-right-radius: 5px;
-                left: 0;
-                right: auto;
-                padding-top: 0;
-                padding-bottom: 0;
-                
-                li a {
-                    margin: 5px;
-                    background-color: $red;
-                }
-            }
-        }
+        }        
         li.active, {
             a, a:hover, a:focus {
                 color: $white;
                 background-color: darken($blue, 10%);
                 border-radius: 5px;
                 box-shadow: 0 3px 0 darken($blue, 20%);
+                font-size: 14px;
             }
         }
         a:hover, a:focus, a:active {
             color: $white;
             background-color: darken($blue, 10%);            
             border-radius: 5px;
-            box-shadow: 0 3px 0 darken($blue, 20%);
-        }      
+            box-shadow: 0 3px 0 darken($blue, 20%);            
+        }
+        //DROPDOWM MENU
+        li.dropdown {
+            a:active, a:focus {
+                color: $white;
+                background-color: $red;
+                border-radius: 5px;
+                box-shadow: 0 3px 0 darken($red, 20%);                
+            }
+            ul.dropdown-menu {
+                background-color: darken($red, 10%);                
+                border-radius: 5px;
+                left: 0;
+                right: auto;
+                padding-top: 0;
+                padding-bottom: 0;                
+                li a {
+                    margin: 5px;
+                    background-color: $red;
+                    border-radius: 5px;                    
+                    &:hover {
+                        background-color: darken($blue, 10%);
+                        box-shadow: 0 3px 0 darken($blue, 20%);
+                    }
+                }
+            }
+        }
     }   
 }
 // SLIDER
-.container-fluid {
-    padding: 0;
+#slider {
+    padding: 0;    
     img {
        width: 100%; 
-    }    
+    }
+    .carousel-indicators {
+        position: static;
+        margin-top: 21px;
+        margin-left: 0;
+        width: 100%;        
+        font-size: 0;
+        margin-bottom: 0;
+        li {
+            width: 60px;
+            height: 5px;
+            border-radius: 0;
+            background-color: #b0b8b9;
+            margin-left: 10px;            
+        }
+        li.active {
+            background-color: $red;
+            margin-top: 1px;
+            margin-bottom: 1px;
+        }
+    }
+}
+// INTRO
+#intro {
+    background-color: #ececec;
+    margin-top: 24px;
+    height: 100px;
+    .col-lg-9 {
+        padding-right: 0;
+    }
+    h1 {        
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 36px;
+        margin-left: 13px;       
+        margin-bottom: 0;
+    }
+    p {       
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 21px;
+        margin-left: 13px;        
+    }
+    button {
+        @include btn;
+        background-color: $red;
+        box-shadow: 0 3px 0 darken($red, 20%);
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin: 24px 35px;
+    }
+}
+// SERVICES
+#services {
+    .col-lg-3 {
+        height: 310px;
+        width: 270px;
+        border-radius: 5px;
+        background-color: #f8f8f8;
+        text-align: center; 
+        margin-right: 30px;
+        box-shadow: 0 3px 0 #e5e6e6;
+        margin-top: 50px;
+        &:hover {
+            background-color: $white;
+            cursor: pointer;
+            i {
+                color: $red;
+            }
+            button {
+                background-color: $red;
+                box-shadow: 0 3px 0 darken($red, 20%);
+            }
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+        i {
+            margin-top: 48px;
+            font-size: 60px;
+            color: $blue;  
+        }
+        h2 {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 19px;           
+        }
+        p {
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 21px;
+        }
+        button {
+            @include btn;
+            background-color: $blue;
+            box-shadow: 0 3px 0 darken($blue, 20%);
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 17px;
+            position: absolute;
+            bottom: -25px;
+            left: 35px;
+        }
+    }
 }
