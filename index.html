@@ -13,6 +13,7 @@
     <link rel="shortcut icon" href="favicon.png">    
     <link rel="stylesheet" href="app/libs/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="app/libs/font-awesome/font-awesome.min.css">
+    <link rel="stylesheet" href="app/libs/3Dgallery/css/style.css">
     <link rel="stylesheet" href="app/css/main.css">
   </head>
   <body>
@@ -178,7 +179,7 @@
     </section>
     
 <!--WHY MODUS VERSUS?-->
-    <section class="container-fluid">
+    <section class="container-fluid" id="slider2">
         <div class="container">
             <div class="rov">
                 <h1>WHY MODUS VERSUS?</h1>
@@ -187,13 +188,24 @@
                 <div class="col-lg-6"></div>
                 <div class="col-lg-4"></div>
             </div>
+<!--SLIDER2-->
+            <section id="dg-container" class="dg-container">
+				<div class="dg-wrapper">
+					<a href="#"><img src="app/img/Brows.jpg" alt="image01"><div>https://www.sydort.github.io/</div></a>
+					<a href="#"><img src="app/img/brows1.jpg" alt="image02"><div>https://www.sydort.github.io/</div></a>
+					<a href="#"><img src="app/img/brows3.jpg" alt="image03"><div>https://www.sydort.github.io</div></a>
+				</div>
+				<!--nav>	
+					<span class="dg-prev">&lt;</span>
+					<span class="dg-next">&gt;</span>
+				</nav-->
+			</section>
         </div>
     </section>
     
 <!--TESTIMONIALS-->
-    <section class="container">
-       <div class="row">
-          
+    <section class="container" id="testim">
+       <div class="row">          
            <div class="col-lg-3">
                <h1>Why Choose Us ?</h1>
                <ul>
@@ -313,7 +325,9 @@
     
     <script src="app/libs/jquery/jquery-3.2.1.min.js"></script>    
     <script src="app/libs/bootstrap/bootstrap.min.js"></script>
-    <script src="https://use.fontawesome.com/4d932861cb.js"></script>
+    <script src="https://use.fontawesome.com/4d932861cb.js"></script> 
+    <script src="app/libs/3Dgallery/js/modernizr.custom.53451.js"></script>
+    <script src="app/libs/3Dgallery/js/jquery.gallery.js"></script>
     <!--[if lt IE 9]>
 	<script src="app/libs/html5shiv/es5-shim.min.js"></script>
 	<script src="app/libs/html5shiv/html5shiv.min.js"></script>
@@ -322,5 +336,13 @@
 	<![endif]-->    
     <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+	<script type="text/javascript">
+			$(function() {
+				$('#dg-container').gallery({
+					autoplay	:	true,
+                    interval	: 3000
+				});
+			});
+		</script>
   </body>
 </html>

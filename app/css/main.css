@@ -98,7 +98,8 @@ nav.navbar {
 #slider {
   padding: 0; }
   #slider img {
-    width: 100%; }
+    width: 100%;
+    max-height: 500px; }
   #slider .carousel-indicators {
     position: static;
     margin-top: 21px;
@@ -142,13 +143,17 @@ nav.navbar {
             border-radius: 5px;
     color: #ffffff;
     border: 0;
-    background-color: #e96259;
-    -webkit-box-shadow: 0 3px 0 #c2241a;
-            box-shadow: 0 3px 0 #c2241a;
+    background-color: #76c7c0;
+    -webkit-box-shadow: 0 3px 0 #3e9991;
+            box-shadow: 0 3px 0 #3e9991;
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
     margin: 24px 35px; }
+    #intro button:hover {
+      background-color: #e96259;
+      -webkit-box-shadow: 0 3px 0 #c2241a;
+              box-shadow: 0 3px 0 #c2241a; }
 
 #services .col-lg-3 {
   height: 310px;
@@ -200,3 +205,25 @@ nav.navbar {
     position: absolute;
     bottom: -25px;
     left: 35px; }
+
+#slider2 {
+  max-height: 400px;
+  background: url(../img/mdl-line.png) top left repeat-x;
+  background-color: #ececec;
+  margin-top: 74px;
+  text-align: center; }
+  #slider2 h1 {
+    margin-top: 53px;
+    color: #e1524b;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    text-transform: uppercase; }
+  #slider2 p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21px;
+    margin-bottom: 60px; }
+
+#testim {
+  margin-top: 213px; }
