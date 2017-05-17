@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">  
     <title>Modus Versus</title>
-    <link rel="shortcut icon" href="favicon.png">    
+    <link rel="shortcut icon" href="app/img/favicon/favicon.png">    
     <link rel="stylesheet" href="app/libs/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="app/libs/font-awesome/font-awesome.min.css">
     <link rel="stylesheet" href="app/libs/3Dgallery/css/style.css">
@@ -136,7 +136,7 @@
 <!--INTRO-->
     <section class="container" id="intro">
        <div class="row">
-            <div class="col-lg-9">
+            <div class="col-lg-9" id="int1">
                 <h1>Some of our top services</h1>
                 <p>Ut eleifend libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo.</p>  
             </div>
@@ -148,28 +148,28 @@
  <!--SERVICES-->
     <section class="container" id="services">    
         <div class="row">           
-           <div class="col-lg-3">
+           <div class="col-lg-3 serv">
                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
                <h2>SUSPENDISSE</h2>
                <p>Quisque id tellus quis risus vehicula vehicula ut turpis. In eros nulla, placerat vitae at, vehicula ut nunc.</p>
                <button>read more</button>
            </div>
            
-           <div class="col-lg-3">
+           <div class="col-lg-3 serv">
                <i class="fa fa-key" aria-hidden="true"></i>
                <h2>MAECENAS</h2>
                <p>Ut eleifend libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo.</p>
                <button>read more</button>
            </div>
            
-           <div class="col-lg-3">
+           <div class="col-lg-3 serv">
                <i class="fa fa-flag" aria-hidden="true"></i>
                <h2>ALIQUAM</h2>
                <p>Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor non.</p>
                <button>read more</button>
            </div>
            
-           <div class="col-lg-3">
+           <div class="col-lg-3 serv">
                <i class="fa fa-flask" aria-hidden="true"></i>
                <h2>HABITASSE</h2>
                <p>Astehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor non.</p>
@@ -183,10 +183,7 @@
         <div class="container">
             <div class="rov">
                 <h1>WHY MODUS VERSUS?</h1>
-                <p>Capacitance cascading integer reflective interface data development high bus cache dithering transponder.</p>
-                <div class="col-lg-4"></div>
-                <div class="col-lg-6"></div>
-                <div class="col-lg-4"></div>
+                <p>Capacitance cascading integer reflective interface data development high bus cache dithering transponder.</p>                
             </div>
 <!--SLIDER2-->
             <section id="dg-container" class="dg-container">
@@ -206,7 +203,7 @@
 <!--TESTIMONIALS-->
     <section class="container" id="testim">
        <div class="row">          
-           <div class="col-lg-3">
+           <div class="col-lg-3" id="sec_left">
                <h1>Why Choose Us ?</h1>
                <ul>
                    <li>Quisque at massa ipsum</li>
@@ -218,41 +215,44 @@
                </ul>
            </div>
            
-           <div class="col-lg-6">
-               <p>Curabitur quis nisl in leo euismod venenatis eu in diam. Etiam auctor diam pellentesque lectus vehicula mattis. Nulla ac massa at dolor condimentum eleifend vitae vitae urna.</p>
-               <div>
-                   <img src="app/img/50.png" alt="50">
-                   <p>SUSPENDISSE</p>
-               </div>
-               <div>
-                   <img src="app/img/70.png" alt="70">
-                   <p>MAECENAS</p>
-               </div>
-               <div>
-                   <img src="app/img/80.png" alt="80">
-                   <p>ALIQUAM</p>
-               </div>
-               <div>
-                   <img src="app/img/100.png" alt="100">
-                   <p>HABITASSE</p>
-               </div>
+           <div class="col-lg-6" id="sec_mdl">
+               <p>Curabitur quis nisl in leo euismod venenatis eu in diam. Etiam auctor diam pellentesque lectus <span>vehicula mattis</span>. Nulla ac massa at dolor condimentum eleifend vitae vitae urna.</p>
+               <img src="app/img/50.png" id="img50" alt="50">
+               <h3>SUSPENDISSE</h3>
+               <img src="app/img/70.png" id="img70" alt="70">
+               <h3>MAECENAS</h3>
+               <img src="app/img/80.png" id="img80" alt="80">
+               <h3>ALIQUAM</h3>
+               <img src="app/img/100.png" id="img100" alt="100">
+               <h3>HABITASSE</h3>
            </div>
            
-           <div class="col-lg-3">
+           <div class="col-lg-3" id="sec_right">
                <h1>What Client’s Say ?</h1>
                <div>
+                   <img src="app/img/review.png" alt="review">
                    <p>Curabitur quis nisl in leo euismod venenatis eu in diam. Etiam auctor diam pellentesque lectus vehicula mattis. Nulla ac massa at dolor condimentum</p>
                    <span>Jhon Doe</span>
                </div>
            </div>
-           
-           <div>
-               <p>Our Happy Clients</p>
+        </div>   
+    </section> 
+       
+<!--CLIENTS-->
+    <aside class="container" id="clients">   
+        <div class="row">   
+           <div class="col-lg-2" id="cln">
+               <h3>Our Happy Clients</h3>
+            </div> 
+            <div class="col-lg-9" id="line">    
                <img src="app/img/line.png" alt="line">
+            </div>
+            <div class="col-lg-1" id="cln_btn">     
                <button><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
                <button><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
            </div>
-       </div>
+        </div>   
+       
        <div class="row">
            <div class="col-lg-2"><img src="app/img/jQuery.png" alt="jQuery"></div>
            <div class="col-lg-2"><img src="app/img/jQuery.png" alt="jQuery"></div>
@@ -261,20 +261,21 @@
            <div class="col-lg-2"><img src="app/img/jQuery.png" alt="jQuery"></div>
            <div class="col-lg-2"><img src="app/img/jQuery.png" alt="jQuery"></div>           
        </div>
-   </section>
+    </aside>
     
 <!--FOOTER-->
     <footer>
-        <div class="container-fluid">  
+        <div class="container-fluid" id="footer_top">  
            <div class="container">
                 <div class="row">
-                    <section class="col-lg-4">
-                        <h1><span>Modus </span>versus</h1>
+                    <section class="col-lg-4" id="ftr1">
+                        <h1><a href="#"><span>Modus </span>versus</a></h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec.</p>
-                        <p>Phone:  <span>182 2569 5896</span></p>
-                        <p>e-mail:  <span>info@modu.versus</span></p>
+                        <p>Phone: <span>182 2569 5986</span></p>
+                        <p>e-mail: <a href="http://taras.sydor@outlook.com"><span>taras.sydor@outlook.com</span></a></p>
                     </section>
-                    <section class="col-lg-2">
+                    
+                    <section class="col-lg-2 ftr2">
                         <h1>Company</h1>
                         <ul>
                             <li><a href="#">About</a></li>
@@ -285,40 +286,49 @@
                             <li><a href="#">Testimonials</a></li>
                         </ul>
                     </section>
-                    <section class="col-lg-2">
+                    
+                    <section class="col-lg-2 ftr2">
                         <h1>Community</h1>
                         <ul>
                             <li><a href="#">Blog</a></li>
                             <li><a href="#">Forum</a></li>
                             <li><a href="#">Support</a></li>
-                            <li><a href="#">Newsletter</a></li>                    
+                            <li><a href="#">Newsletter</a></li> 
                         </ul>
                     </section>
-                    <section class="col-lg-4">
+                    
+                    <section class="col-lg-4" id="ftr3">
                         <h1><span>from the </span>BLOG</h1>
 
-                        <div>
+                        <div class="testim_img">
                             <img src="app/img/testim.png" alt="img">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                            <p><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></p>
                             <time>26 May, 2013</time>
                         </div>
 
-                        <div>
+                        <div class="testim_img" id="bot_img">
                             <img src="app/img/testim.png" alt="img">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                            <p><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></p>
                             <time>26 May, 2013</time>
                         </div>                    
                     </section>
                 </div>
             </div>
         </div>
-        <div class="container-fluid">               
+        
+        <div class="container-fluid" id="footer_bot">               
             <div class="container">
-                <p>2013  ModusVersus</p>
-                <a href="#" id="social-fb"></a>
-                <a href="#" id="social-ggl"></a>
-                <a href="#" id="social-tw"></a>
-                <a href="#" id="social-rss"></a>
+               <div class="row">
+                    <div class="col-lg-10">   
+                        <p>2013  ModusVersus</p>
+                    </div>
+                    <div class="col-lg-2" id="social">       
+                        <a href="#" id="social-fb"></a>
+                        <a href="#" id="social-ggl"></a>
+                        <a href="#" id="social-tw"></a>
+                        <a href="#" id="social-rss"></a>
+                    </div>    
+                </div>
             </div>
         </div>   
     </footer> 
