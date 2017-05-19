@@ -3,6 +3,36 @@
   src: url("../fonts/opensans/open-sans.eot");
   src: url("../fonts/opensans/open-sans.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans/open-sans.woff2") format("woff2"), url("../fonts/opensans/open-sans.woff") format("woff"), url("../fonts/opensans/open-sans.ttf") format("truetype"), url("../fonts/opensans/open-sans.svg#open_sansregular") format("svg"); }
 
+@font-face {
+  font-family: 'OpenSansRegular';
+  src: url("../fonts/opensans/OpenSansRegular.eot");
+  src: url("../fonts/opensans/fonts/opensans/OpenSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans/fonts/opensans/OpenSansRegular.woff") format("woff"), url("../fonts/opensans/fonts/opensans/OpenSansRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'OpenSansSemiBold';
+  src: url("../fonts/opensans/OpenSansSemiBold.eot");
+  src: url("../fonts/opensans/OpenSansSemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans/OpenSansSemiBold.woff") format("woff"), url("../fonts/opensans/OpenSansSemiBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'OpenSansBold';
+  src: url("../fonts/opensans/OpenSansBold.eot");
+  src: url("../fonts/opensans/OpenSansBold.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans/OpenSansBold.woff") format("woff"), url("../fonts/opensans/OpenSansBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'OpenSansExtraBold';
+  src: url("../fonts/opensans/OpenSansExtraBold.eot");
+  src: url("../fonts/opensans/OpenSansExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans/OpenSansExtraBold.woff") format("woff"), url("../fonts/opensans/OpenSansExtraBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'OpenSansItalic';
+  src: url("../fonts/opensans/OpenSansItalic.eot");
+  src: url("../fonts/opensans/OpenSansItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans/OpenSansItalic.woff") format("woff"), url("../fonts/opensans/OpenSansItalic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'OpenSansSemiBoldItalic';
+  src: url("../fonts/opensans/OpenSansSemiBoldItalic.eot");
+  src: url("../fonts/opensans/OpenSansSemiBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans/OpenSansSemiBoldItalic.woff") format("woff"), url("../fonts/opensans/OpenSansSemiBoldItalic.ttf") format("truetype"); }
+
 * {
   outline: none !important; }
 
@@ -41,12 +71,12 @@ nav.navbar {
         color: #ffffff; }
     nav.navbar h1 span {
       font-size: 30px;
-      font-weight: 700;
+      font-family: OpenSansExtraBold, sans-serif;
       text-transform: uppercase; }
   nav.navbar ul.navbar-nav li a {
+    font-family: OpenSansSemiBold, sans-serif;
     line-height: 16px;
     font-size: 13px;
-    font-weight: 600;
     text-transform: uppercase;
     color: #ffffff;
     padding-top: 9px;
@@ -132,7 +162,7 @@ nav.navbar {
       color: #ffffff;
       background-color: #e96259;
       font-size: 50px;
-      font-weight: 700;
+      font-family: OpenSansExtraBold, sans-serif;
       line-height: 60px;
       text-transform: uppercase;
       width: 345px;
@@ -141,7 +171,6 @@ nav.navbar {
       margin-left: 46%; }
     #slider .carousel-caption p {
       font-size: 16px;
-      font-weight: 400;
       line-height: 26px;
       color: #ffffff;
       background-color: #3F4646;
@@ -182,13 +211,12 @@ nav.navbar {
     padding-right: 0; }
   #intro h1 {
     font-size: 30px;
-    font-weight: 600;
+    font-family: OpenSansSemiBold, sans-serif;
     line-height: 36px;
     margin-left: 13px;
     margin-bottom: 0; }
   #intro p {
     font-size: 13px;
-    font-weight: 400;
     line-height: 21px;
     margin-left: 13px; }
   #intro button {
@@ -202,7 +230,7 @@ nav.navbar {
     -webkit-box-shadow: 0 3px 0 #3e9991;
             box-shadow: 0 3px 0 #3e9991;
     font-size: 20px;
-    font-weight: 600;
+    font-family: OpenSansSemiBold, sans-serif;
     text-transform: uppercase;
     margin: 24px 35px;
     -webkit-transition: all 0.25s ease;
@@ -250,11 +278,10 @@ nav.navbar {
     color: #76c7c0; }
   #services .serv h2 {
     font-size: 16px;
-    font-weight: 700;
+    font-family: OpenSansExtraBold, sans-serif;
     line-height: 19px; }
   #services .serv p {
     font-size: 13px;
-    font-weight: 400;
     line-height: 21px; }
   #services .serv button {
     width: 200px;
@@ -267,7 +294,7 @@ nav.navbar {
     -webkit-box-shadow: 0 3px 0 #3e9991;
             box-shadow: 0 3px 0 #3e9991;
     font-size: 14px;
-    font-weight: 600;
+    font-family: OpenSansSemiBold, sans-serif;
     line-height: 17px;
     position: absolute;
     bottom: -25px;
@@ -282,12 +309,11 @@ nav.navbar {
     margin-top: 53px;
     color: #e1524b;
     font-size: 40px;
-    font-weight: 600;
+    font-family: OpenSansSemiBold, sans-serif;
     line-height: 48px;
     text-transform: uppercase; }
   #slider2 p {
     font-size: 13px;
-    font-weight: 400;
     line-height: 21px;
     margin-bottom: 60px; }
 
@@ -295,7 +321,7 @@ nav.navbar {
   margin-top: 213px; }
   #testim #sec_left h1 {
     font-size: 16px;
-    font-weight: 700;
+    font-family: OpenSansExtraBold, sans-serif;
     line-height: 19px;
     margin-top: 0; }
   #testim #sec_left ul {
@@ -305,13 +331,11 @@ nav.navbar {
       list-style-image: url(../img/arrow.png);
       list-style-position: inside;
       font-size: 13px;
-      font-weight: 400;
       line-height: 26px; }
   #testim #sec_mdl {
     position: relative; }
     #testim #sec_mdl p {
       font-size: 13px;
-      font-weight: 400;
       line-height: 25px; }
       #testim #sec_mdl p span {
         color: #e1524b;
@@ -320,11 +344,11 @@ nav.navbar {
       float: left;
       margin-top: 125px;
       font-size: 16px;
-      font-weight: 700;
+      font-family: OpenSansExtraBold, sans-serif;
       line-height: 19px;
       text-transform: uppercase;
       margin-left: 5px;
-      padding-right: 45px; }
+      padding-right: 40px; }
     #testim #sec_mdl img {
       position: absolute;
       top: 105px; }
@@ -336,7 +360,7 @@ nav.navbar {
       margin-left: 400px; }
   #testim #sec_right h1 {
     font-size: 16px;
-    font-weight: 700;
+    font-family: OpenSansExtraBold, sans-serif;
     line-height: 19px;
     margin-top: 0; }
   #testim #sec_right img {
@@ -347,8 +371,7 @@ nav.navbar {
     float: left;
     font-size: 13px;
     line-height: 25px;
-    font-style: italic;
-    font-weight: 400;
+    font-family: OpenSansItalic, sans-serif;
     text-align: left;
     padding-left: 7px;
     padding-top: 7px;
@@ -356,7 +379,7 @@ nav.navbar {
     margin-bottom: 15px; }
   #testim #sec_right span {
     font-size: 16px;
-    font-weight: 600;
+    font-family: OpenSansSemiBold, sans-serif;
     line-height: 30px;
     color: #777777;
     margin-left: 59px; }
@@ -367,7 +390,7 @@ nav.navbar {
     padding-right: 0; }
   #clients h3 {
     font-size: 16px;
-    font-weight: 700;
+    font-family: OpenSansExtraBold, sans-serif;
     line-height: 19px;
     margin-top: 8px;
     margin-bottom: 51px; }
@@ -403,25 +426,22 @@ footer #ftr1 {
     padding-bottom: 15px; }
     footer #ftr1 h1 a {
       color: #ffffff;
-      font-size: 25px;
-      font-weight: 400; }
+      font-size: 25px; }
       footer #ftr1 h1 a:hover {
         color: #ffffff; }
       footer #ftr1 h1 a span {
+        font-family: OpenSansExtraBold, sans-serif;
         font-size: 30px;
-        font-weight: 700;
         text-transform: uppercase; }
   footer #ftr1 p {
     color: #ffffff;
     font-size: 13px;
-    font-weight: 400;
     line-height: 23px; }
     footer #ftr1 p:hover a {
       color: #3B6360; }
     footer #ftr1 p span {
       font-size: 20px;
-      font-weight: 600;
-      font-style: italic;
+      font-family: OpenSansSemiBoldItalic, sans-serif;
       line-height: 36px; }
 
 footer .ftr2 {
@@ -429,13 +449,12 @@ footer .ftr2 {
   footer .ftr2 h1 {
     color: #3B6360;
     font-size: 20px;
-    font-weight: 700;
+    font-family: OpenSansBold, sans-serif;
     line-height: 24px;
     padding-bottom: 17px; }
   footer .ftr2 ul li {
     list-style-image: url(../img/arr.png);
     font-size: 13px;
-    font-weight: 400;
     line-height: 23px; }
     footer .ftr2 ul li:hover a {
       color: #3B6360; }
@@ -446,14 +465,14 @@ footer #ftr3 {
     color: #ffffff;
     font-size: 20px;
     line-height: 24px;
-    font-weight: 700; }
+    font-family: OpenSansBold, sans-serif; }
     footer #ftr3 h1 span {
-      font-style: italic; }
+      font-family: OpenSansItalic, sans-serif;
+      font-weight: normal; }
   footer #ftr3 .testim_img img {
     position: absolute; }
   footer #ftr3 .testim_img p {
     font-size: 13px;
-    font-weight: 400;
     line-height: 20px;
     color: #ffffff;
     width: 242px;
@@ -465,7 +484,6 @@ footer #ftr3 {
     color: #000000;
     opacity: 0.5;
     font-size: 13px;
-    font-weight: 400;
     line-height: 20px;
     margin-left: 100px; }
   footer #ftr3 #bot_img {
@@ -476,7 +494,6 @@ footer #footer_bot {
   min-height: 50px; }
   footer #footer_bot p {
     font-size: 12px;
-    font-weight: 400;
     color: #ffffff;
     line-height: 50px;
     margin-bottom: 0; }

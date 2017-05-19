@@ -7,3 +7,45 @@
          url('../fonts/opensans/open-sans.ttf') format('truetype'),
          url('../fonts/opensans/open-sans.svg#open_sansregular') format('svg');   
 }
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('../fonts/opensans/OpenSansRegular.eot');
+    src: url('../fonts/opensans/fonts/opensans/OpenSansRegular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans/fonts/opensans/OpenSansRegular.woff') format('woff'),
+         url('../fonts/opensans/fonts/opensans/OpenSansRegular.ttf') format('truetype');  
+}
+@font-face {
+    font-family: 'OpenSansSemiBold';
+    src: url('../fonts/opensans/OpenSansSemiBold.eot');
+    src: url('../fonts/opensans/OpenSansSemiBold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans/OpenSansSemiBold.woff') format('woff'),
+         url('../fonts/opensans/OpenSansSemiBold.ttf') format('truetype');    
+}
+@font-face {
+    font-family: 'OpenSansBold';
+    src: url('../fonts/opensans/OpenSansBold.eot');
+    src: url('../fonts/opensans/OpenSansBold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans/OpenSansBold.woff') format('woff'),
+         url('../fonts/opensans/OpenSansBold.ttf') format('truetype');    
+}
+@font-face {
+    font-family: 'OpenSansExtraBold';
+    src: url('../fonts/opensans/OpenSansExtraBold.eot');
+    src: url('../fonts/opensans/OpenSansExtraBold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans/OpenSansExtraBold.woff') format('woff'),
+         url('../fonts/opensans/OpenSansExtraBold.ttf') format('truetype');    
+}
+@font-face {
+    font-family: 'OpenSansItalic';
+    src: url('../fonts/opensans/OpenSansItalic.eot');
+    src: url('../fonts/opensans/OpenSansItalic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans/OpenSansItalic.woff') format('woff'),
+         url('../fonts/opensans/OpenSansItalic.ttf') format('truetype');       
+}
+@font-face {
+    font-family: 'OpenSansSemiBoldItalic';
+    src: url('../fonts/opensans/OpenSansSemiBoldItalic.eot');
+    src: url('../fonts/opensans/OpenSansSemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans/OpenSansSemiBoldItalic.woff') format('woff'),
+         url('../fonts/opensans/OpenSansSemiBoldItalic.ttf') format('truetype');  
+}
