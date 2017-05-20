@@ -236,6 +236,12 @@ nav.navbar {
   background-color: #ececec;
   margin-top: 24px;
   height: 100px; }
+  @media (max-width: 768px) {
+    #intro {
+      height: 180px; } }
+  @media (max-width: 401px) {
+    #intro {
+      height: 220px; } }
   #intro #int1 {
     padding-right: 0; }
   #intro h1 {
@@ -244,6 +250,16 @@ nav.navbar {
     line-height: 36px;
     margin-left: 13px;
     margin-bottom: 0; }
+    @media (max-width: 1200px) {
+      #intro h1 {
+        margin-top: 10px; } }
+    @media (max-width: 992px) {
+      #intro h1 {
+        margin-top: 10px; } }
+    @media (max-width: 401px) {
+      #intro h1 {
+        font-size: 20px;
+        line-height: 25px; } }
   #intro p {
     font-size: 13px;
     line-height: 21px;
@@ -270,6 +286,15 @@ nav.navbar {
               box-shadow: 0 3px 0 #c2241a;
       -webkit-transition: all 0.25s ease;
       transition: all 0.25s ease; }
+    @media (max-width: 1200px) {
+      #intro button {
+        margin-left: 55px; } }
+    @media (max-width: 992px) {
+      #intro button {
+        margin-left: 0; } }
+    @media (max-width: 768px) {
+      #intro button {
+        margin: 0 11px; } }
 
 #services .serv {
   height: 310px;
