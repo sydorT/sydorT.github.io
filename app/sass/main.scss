@@ -27,7 +27,11 @@ nav.navbar {
     background: $blue url(../img/top_line.png) bottom left repeat-x;  
     margin: 0;
     height: 80px;
-    border-radius: 0;  
+    border-radius: 0; 
+    
+    @media (max-width: 768px) {
+        height: auto;
+    }
     //LOGO
     h1 {
         float: left;
@@ -36,10 +40,15 @@ nav.navbar {
             color: $white;
             font-size: 25px;
             padding-top: 0;
-            margin-top: 30px;
-            font-weight: 400;        
+            margin-top: 30px;                  
             &:hover {
                 color: $white;
+            }
+            
+            @media (max-width: 768px) {
+                margin: 0;
+                padding: 0;
+                float: none;
             }
         }
         span {
@@ -60,14 +69,31 @@ nav.navbar {
             padding-bottom: 8px;
             margin: 22px 2px;
             transition: all 0.25s ease;
+            
+            @media (max-width: 992px) {
+                padding-left: 6px;
+                padding-right: 6px;
+                font-size: 11px;
+            }
+            
+            @media (max-width: 768px) {
+                text-align: center;
+                margin: 5px;
+            }
         }        
-        li.active, {
+        li.active {
             a, a:hover, a:focus {
                 color: $white;
                 background-color: darken($blue, 10%);
                 border-radius: 5px;
                 box-shadow: 0 3px 0 darken($blue, 20%);
                 font-size: 14px;
+                
+                @media (max-width: 992px) {
+                padding-left: 6px;
+                padding-right: 6px;
+                font-size: 11px;
+                }
             }
         }
         a:hover, a:focus, a:active {
@@ -141,9 +167,12 @@ nav.navbar {
             margin-bottom: 1px;
         }
     }
-    .carousel-caption { 
-        left: 0;  
-        bottom: 200px;
+    .carousel-caption {
+        padding-top: 0;
+        top: 30%;
+        @media (max-width: 768px) {
+                display: none;
+            }
         h2 {
             color: $white;
             background-color: $red;
@@ -151,9 +180,9 @@ nav.navbar {
             font-family: OpenSansExtraBold, sans-serif;
             line-height: 60px;
             text-transform: uppercase;
-            width: 345px;
+            width: 345px;            
             border-radius: 5px;
-            margin-left: 46%;            
+            margin: 0 auto;
         }
         p {
             font-size: 16px;
@@ -162,12 +191,12 @@ nav.navbar {
             background-color: #3F4646;
             width: 470px;
             border-radius: 5px;
-            margin-left: 40%;
+            margin: 0 auto;            
         }
     }
     .carousel-control {
         display: block;
-        top: 220px;
+        margin: auto 0;
         width: 50px;
         height: 57px;
         background-color: $red;
@@ -178,6 +207,12 @@ nav.navbar {
         font-weight: 400;
         line-height: 5px;        
         padding-top: 7px;
+        
+        @media (max-width: 768px) {            
+            width: 40px;
+            height: 47px;
+            font-size: 30px;
+        }
     }
     .left {
         border-top-right-radius: 5px;

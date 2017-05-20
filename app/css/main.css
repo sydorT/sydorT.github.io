@@ -58,6 +58,9 @@ nav.navbar {
   height: 80px;
   -webkit-border-radius: 0;
           border-radius: 0; }
+  @media (max-width: 768px) {
+    nav.navbar {
+      height: auto; } }
   nav.navbar h1 {
     float: left;
     margin: 0; }
@@ -65,10 +68,14 @@ nav.navbar {
       color: #ffffff;
       font-size: 25px;
       padding-top: 0;
-      margin-top: 30px;
-      font-weight: 400; }
+      margin-top: 30px; }
       nav.navbar h1 a.navbar-brand:hover {
         color: #ffffff; }
+      @media (max-width: 768px) {
+        nav.navbar h1 a.navbar-brand {
+          margin: 0;
+          padding: 0;
+          float: none; } }
     nav.navbar h1 span {
       font-size: 30px;
       font-family: OpenSansExtraBold, sans-serif;
@@ -84,6 +91,15 @@ nav.navbar {
     margin: 22px 2px;
     -webkit-transition: all 0.25s ease;
     transition: all 0.25s ease; }
+    @media (max-width: 992px) {
+      nav.navbar ul.navbar-nav li a {
+        padding-left: 6px;
+        padding-right: 6px;
+        font-size: 11px; } }
+    @media (max-width: 768px) {
+      nav.navbar ul.navbar-nav li a {
+        text-align: center;
+        margin: 5px; } }
   nav.navbar ul.navbar-nav li.active a, nav.navbar ul.navbar-nav li.active a:hover, nav.navbar ul.navbar-nav li.active a:focus {
     color: #ffffff;
     background-color: #52b8af;
@@ -92,6 +108,11 @@ nav.navbar {
     -webkit-box-shadow: 0 3px 0 #3e9991;
             box-shadow: 0 3px 0 #3e9991;
     font-size: 14px; }
+    @media (max-width: 992px) {
+      nav.navbar ul.navbar-nav li.active a, nav.navbar ul.navbar-nav li.active a:hover, nav.navbar ul.navbar-nav li.active a:focus {
+        padding-left: 6px;
+        padding-right: 6px;
+        font-size: 11px; } }
   nav.navbar ul.navbar-nav a:hover, nav.navbar ul.navbar-nav a:focus, nav.navbar ul.navbar-nav a:active {
     color: #ffffff;
     background-color: #52b8af;
@@ -156,8 +177,11 @@ nav.navbar {
       margin-top: 1px;
       margin-bottom: 1px; }
   #slider .carousel-caption {
-    left: 0;
-    bottom: 200px; }
+    padding-top: 0;
+    top: 30%; }
+    @media (max-width: 768px) {
+      #slider .carousel-caption {
+        display: none; } }
     #slider .carousel-caption h2 {
       color: #ffffff;
       background-color: #e96259;
@@ -168,7 +192,7 @@ nav.navbar {
       width: 345px;
       -webkit-border-radius: 5px;
               border-radius: 5px;
-      margin-left: 46%; }
+      margin: 0 auto; }
     #slider .carousel-caption p {
       font-size: 16px;
       line-height: 26px;
@@ -177,10 +201,10 @@ nav.navbar {
       width: 470px;
       -webkit-border-radius: 5px;
               border-radius: 5px;
-      margin-left: 40%; }
+      margin: 0 auto; }
   #slider .carousel-control {
     display: block;
-    top: 220px;
+    margin: auto 0;
     width: 50px;
     height: 57px;
     background-color: #e96259;
@@ -192,6 +216,11 @@ nav.navbar {
     font-weight: 400;
     line-height: 5px;
     padding-top: 7px; }
+    @media (max-width: 768px) {
+      #slider .carousel-control {
+        width: 40px;
+        height: 47px;
+        font-size: 30px; } }
   #slider .left {
     -webkit-border-top-right-radius: 5px;
             border-top-right-radius: 5px;
