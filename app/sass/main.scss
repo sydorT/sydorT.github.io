@@ -121,15 +121,22 @@ nav.navbar {
                 left: 0;
                 right: auto;
                 padding-top: 0;
-                padding-bottom: 0;                
+                padding-bottom: 0; 
+                
+                @media (max-width: 768px) {
+                    padding-top: 1px;
+                    padding-bottom: 1px;
+                }
                 li a {
                     margin: 5px;
                     background-color: $red;
                     border-radius: 5px; 
                     padding-left: 15px;
+                    color: $white;
                     &:hover {
                         background-color: darken($blue, 10%);
                         box-shadow: none;
+                        color: $white;
                     }
                     i {
                         font-size: 14px;
@@ -335,6 +342,10 @@ nav.navbar {
                 color: $red;
                 transition: all 0.25s ease;
             }
+        }
+        @media (max-width: 1999px) { 
+            width: 270px;
+            margin: 50px auto 0;
         }
         &:last-child {
             margin-right: 0;
