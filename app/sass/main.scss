@@ -295,13 +295,35 @@ nav.navbar {
 }
 // SERVICES
 #services {
+    .serv-container {
+        text-align: center;
+        &:hover {
+            button{
+                background-color: $red;
+                box-shadow: 0 3px 0 darken($red, 20%);
+                transition: all 0.25s ease;
+            }
+        }
+    }
+
+    .serv-button {
+        @include btn;
+        background-color: $blue;
+        box-shadow: 0 3px 0 darken($blue, 20%);
+        font-size: 14px;
+        font-family: OpenSansSemiBold, sans-serif;
+        line-height: 17px;
+        position: relative;
+        bottom: 25px;
+        display: inline-block;
+    }
+
     .serv {
         height: 310px;
-        width: 270px;
         border-radius: 5px;
         background-color: #f8f8f8;
         text-align: center; 
-        margin-right: 30px;
+        padding: 0 15px 0 15px;
         box-shadow: 0 3px 0 #e5e6e6;
         margin-top: 50px;
         transition: all 0.25s ease;
@@ -311,11 +333,6 @@ nav.navbar {
             transition: all 0.25s ease;
             i {
                 color: $red;
-                transition: all 0.25s ease;
-            }
-            button {
-                background-color: $red;
-                box-shadow: 0 3px 0 darken($red, 20%);
                 transition: all 0.25s ease;
             }
         }
@@ -335,17 +352,6 @@ nav.navbar {
         p {
             font-size: 13px;            
             line-height: 21px;
-        }
-        button {
-            @include btn;
-            background-color: $blue;
-            box-shadow: 0 3px 0 darken($blue, 20%);
-            font-size: 14px;
-            font-family: OpenSansSemiBold, sans-serif;
-            line-height: 17px;
-            position: absolute;
-            bottom: -25px;
-            left: 35px;
         }
     }
 }

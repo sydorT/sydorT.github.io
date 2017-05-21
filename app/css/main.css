@@ -296,14 +296,39 @@ nav.navbar {
       #intro button {
         margin: 0 11px; } }
 
+#services .serv-container {
+  text-align: center; }
+  #services .serv-container:hover button {
+    background-color: #e96259;
+    -webkit-box-shadow: 0 3px 0 #c2241a;
+            box-shadow: 0 3px 0 #c2241a;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease; }
+
+#services .serv-button {
+  width: 200px;
+  height: 50px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  color: #ffffff;
+  border: 0;
+  background-color: #76c7c0;
+  -webkit-box-shadow: 0 3px 0 #3e9991;
+          box-shadow: 0 3px 0 #3e9991;
+  font-size: 14px;
+  font-family: OpenSansSemiBold, sans-serif;
+  line-height: 17px;
+  position: relative;
+  bottom: 25px;
+  display: inline-block; }
+
 #services .serv {
   height: 310px;
-  width: 270px;
   -webkit-border-radius: 5px;
           border-radius: 5px;
   background-color: #f8f8f8;
   text-align: center;
-  margin-right: 30px;
+  padding: 0 15px 0 15px;
   -webkit-box-shadow: 0 3px 0 #e5e6e6;
           box-shadow: 0 3px 0 #e5e6e6;
   margin-top: 50px;
@@ -316,12 +341,6 @@ nav.navbar {
     transition: all 0.25s ease; }
     #services .serv:hover i {
       color: #e96259;
-      -webkit-transition: all 0.25s ease;
-      transition: all 0.25s ease; }
-    #services .serv:hover button {
-      background-color: #e96259;
-      -webkit-box-shadow: 0 3px 0 #c2241a;
-              box-shadow: 0 3px 0 #c2241a;
       -webkit-transition: all 0.25s ease;
       transition: all 0.25s ease; }
   #services .serv:last-child {
@@ -337,22 +356,6 @@ nav.navbar {
   #services .serv p {
     font-size: 13px;
     line-height: 21px; }
-  #services .serv button {
-    width: 200px;
-    height: 50px;
-    -webkit-border-radius: 5px;
-            border-radius: 5px;
-    color: #ffffff;
-    border: 0;
-    background-color: #76c7c0;
-    -webkit-box-shadow: 0 3px 0 #3e9991;
-            box-shadow: 0 3px 0 #3e9991;
-    font-size: 14px;
-    font-family: OpenSansSemiBold, sans-serif;
-    line-height: 17px;
-    position: absolute;
-    bottom: -25px;
-    left: 35px; }
 
 #slider2 {
   max-height: 400px;
