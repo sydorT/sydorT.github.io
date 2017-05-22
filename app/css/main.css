@@ -401,6 +401,7 @@ nav.navbar {
   #testim #sec_left ul {
     padding-left: 0;
     padding-top: 22px; }
+    @media (max-width: 1199px) {
       #testim #sec_left ul {
         padding-top: 0; } }
     #testim #sec_left ul li {

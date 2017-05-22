@@ -406,6 +406,7 @@ nav.navbar {
             padding-left: 0;
             padding-top: 22px;
             
+            @media (max-width: 1199px) { 
                 padding-top: 0;
             }
             li {                
