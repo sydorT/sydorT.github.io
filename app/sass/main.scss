@@ -375,6 +375,9 @@ nav.navbar {
     background: #ececec url(../img/mdl-line.png) top left repeat-x;    
     margin-top: 74px;
     text-align: center;
+    @media (max-width: 768px) {
+            margin-top: 0;
+        }
     h1 {
         margin-top: 53px;
         color: #e1524b;
@@ -388,10 +391,19 @@ nav.navbar {
         line-height: 21px;
         margin-bottom: 60px;
     }
+    .dg-container{
+        @media (max-width: 583px) {
+            display: none;
+        }
+    }
 }
 // TESTIMONIALS
 #testim {
     margin-top: 213px;
+    
+    @media (max-width: 583px) {
+        margin-top: 20px;
+    }
     #sec_left {
         @media (max-width: 1199px) { 
             text-align: center;
@@ -548,9 +560,13 @@ footer {
     #footer_top {  
         margin-top: 50px;        
         background: $blue url(../img/line_footer.png) top left repeat-x; 
-        min-height: 350px;        
+        min-height: 350px; 
     }
     #ftr1 {
+        @media (max-width: 768px) {
+            text-align: center;
+            margin-top: 0;
+        }
         margin-top: 30px;
         h1 {
             padding-bottom: 15px;
@@ -566,6 +582,10 @@ footer {
                     text-transform: uppercase;                    
                 }
             }
+            @media (max-width: 768px) {
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
         }
         p {
             color: $white;            
@@ -579,6 +599,10 @@ footer {
                 font-family: OpenSansSemiBoldItalic, sans-serif;                
                 line-height: 36px;               
             }
+            @media (max-width: 768px) {
+                margin-bottom: 0;
+                margin-top: 10px;
+            }
         }
     }
     .ftr2 {
@@ -589,6 +613,10 @@ footer {
             font-family: OpenSansBold, sans-serif;            
             line-height: 24px;
             padding-bottom: 17px;
+            
+            @media (max-width: 600px) {
+                padding-bottom: 0;
+            }
         }
         ul {
             li {
@@ -599,6 +627,15 @@ footer {
                     color: #3B6360;
                 }
             }
+        }
+        
+        @media (max-width: 768px) {
+                margin-top: 20px;
+            }
+        
+        @media (max-width: 600px) {
+            width: 100%;
+            margin-top: 0;
         }
     }
     #ftr3 {
@@ -617,7 +654,6 @@ footer {
             
             img {
                 position: absolute;
-                
             }
             p {
                 font-size: 13px;                
@@ -629,6 +665,10 @@ footer {
                 &:hover a {
                     color: #3B6360;
                 }
+                
+                @media (max-width: 850px) {
+                    width: 150px;
+                }
             }
             time {
                 color: #000000;
@@ -636,10 +676,25 @@ footer {
                 font-size: 13px;                
                 line-height: 20px;
                 margin-left: 100px;
+                
+                @media (max-width: 850px) {
+                    display: block;
+                    margin-top: 30px;
+                }
             }
         }
         #bot_img {
             margin-top: 20px;
+        }
+        
+        @media (max-width: 768px) {
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+        
+        @media (max-width: 600px) {
+            width: 100%;
+            margin-top: 0;
         }
     }
     #footer_bot {
@@ -650,9 +705,20 @@ footer {
             color: $white;
             line-height: 50px;
             margin-bottom: 0;
+            
+            @media (max-width: 513px) {
+                width: 190%;
+                text-align: center;
+            }
         }
         #social {
             line-height: 50px;
+            
+            @media (max-width: 513px) {
+                width: 100%;
+                text-align: center;
+            }
+            
             #social-fb {               
                 font-size: 25px; 
                 &:hover {
