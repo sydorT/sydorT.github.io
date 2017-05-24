@@ -5,7 +5,9 @@
          url('../fonts/opensans/open-sans.woff2') format('woff2'),
          url('../fonts/opensans/open-sans.woff') format('woff'),
          url('../fonts/opensans/open-sans.ttf') format('truetype'),
-         url('../fonts/opensans/open-sans.svg#open_sansregular') format('svg');   
+         url('../fonts/opensans/open-sans.svg#open_sansregular') format('svg');
+    font-style: normal;
+    font-weight: normal;
 }
 @font-face {
     font-family: 'OpenSansRegular';
