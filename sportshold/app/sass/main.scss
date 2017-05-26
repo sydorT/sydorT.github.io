@@ -1,3 +1,122 @@
-@import "vars"
-@import "fonts"
-    
+@import "vars";
+@import "fonts";
+
+// COMMON STYLES
+
+body {
+    font-family: 'truenolight', sans-serif;
+    line-height: 26px;
+    font-size: 16px;
+}
+h1, h2, h3, h4, h5, h6, p, ul, li {
+    padding: 0;
+    margin: 0;
+}
+ul, li {
+    list-style-type: none;
+}
+a {
+    color: #fff;
+    &:hover {
+        text-decoration: none;
+        color: #fff;
+    }
+}
+section {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+//NAVBAR
+//TOP MENU
+#paddin {
+    padding-left: 0;
+}
+#top_bg_color {
+    background-color: $brown;
+    height: 50px;
+    font-size: 13px;
+}
+.top_nav_left {
+    ul {
+        li {
+            display: inline-block;
+            line-height: 50px;
+            padding: 0 20px;
+            &:hover {
+                background-color: $pink;
+                cursor: pointer;
+            }
+        }
+    }
+}
+.floa_right {
+    float: right;
+}
+.top_nav_right {
+    line-height: 50px;
+    float: right;
+    img {
+        position: absolute;
+        top: 50%;
+        margin-top: -10px;
+        left: 35px;
+    }
+    .price {
+        color: #fff;
+    }
+    .quantity {
+        color: #dcc5b8;
+        margin-right: 21px;
+    }
+    #borde-left {
+        border-left: 1px solid #593938;
+    }
+    p {
+        display: inline-block;
+        padding: 0 20px;
+        &:hover {
+            background-color: $pink;
+            cursor: pointer;
+        }
+    }
+}
+
+// LOGO
+
+nav.navbar-default {
+    background-color: $brownlight;
+    border: none;
+    border-radius: 0;
+    height: 76px;
+    position: relative;
+    h1 {
+        a.navbar-brand {
+            position: absolute;
+            padding: 0 20px;
+            top: 50%;
+            margin-top: -16px;
+        }
+    }
+// MAIN MENU    
+    .navbar-nav {
+        li, li.active {
+            a {
+                background-color: transparent;
+                color: #fff;
+                padding-bottom: 24px;
+                &:hover, &:active, &:focus {
+                    color: $pink;
+                    border-bottom: 4px solid $pink;
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}
+.nav_links_top {
+    margin-top: 13px;
+}
+
+
+
