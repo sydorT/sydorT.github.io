@@ -17,7 +17,7 @@ ul, li {
 }
 a {
     color: #fff;
-    &:hover {
+    &:hover, &:focus, &:visited {
         text-decoration: none;
         color: #fff;
     }
@@ -90,6 +90,7 @@ nav.navbar-default {
     border-radius: 0;
     height: 76px;
     position: relative;
+    margin-bottom: 0;
     h1 {
         a.navbar-brand {
             position: absolute;
@@ -116,6 +117,61 @@ nav.navbar-default {
 }
 .nav_links_top {
     margin-top: 13px;
+}
+// SLIDER
+#slider {
+    height: 600px;
+    background-color: #F0EFEE;
+    position: relative;
+    img {
+        position: absolute;
+        top: -41px;
+        left: -374px;
+    }
+    .price-slider {
+        margin-top: 133px;
+        font-size: 30px;
+        color: $brownlight;
+    }
+    h2 {
+        margin-top: 18px;
+        font-family: 'truenoultrablack';
+        font-size: 70px;
+        color: $brownlight;
+    }
+    .variants {
+        margin-top: 24px;
+        font-family: 'truenoultrablack';
+        font-size: 50px;
+        color: $pink;
+    }
+    .disc {
+        margin-top: 36px;
+        color: #8a8784;
+    }
+    a {
+        display: inline-block;
+        margin-top: 34px;
+        padding: 15px 47px;
+        background-color: $pink;
+        font-family: 'truenobold';
+        text-transform: uppercase;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        transition: all 300ms;
+        &:hover {
+            box-shadow: 2px 2px 0px white, 4px 4px 0px $pink;
+            top: -4px;
+            left: -4px;
+            transition: all 300ms;
+        }
+        &:active {
+            top: 4px;
+            left: 4px;
+            box-shadow: 0px 0px 0px lighten($pink, 30%);
+        }
+    }
 }
 
 
