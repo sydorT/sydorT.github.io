@@ -178,7 +178,6 @@ nav.navbar-default {
 #arrival-left {
     text-align: center;
     font-size: 30px;
-    padding-left: 0;
     background: url('../img/intro/nike-kyrie-logo.png') 38px 23px no-repeat;
     img {
         position: absolute;
@@ -324,6 +323,7 @@ nav.navbar-default {
     height: 255px;
     background-color: #CECECE;
     position: relative;
+    margin-bottom: 100px;
     img {
         position: absolute;
         width: 100%;
@@ -349,6 +349,94 @@ nav.navbar-default {
         font-family: 'truenobold';
     }
 }
+//PRODUCTS
+#categories {
+    text-align: center;
+    margin-bottom: 50px;
+    a {
+        font-size: 30px;
+        text-transform: uppercase;
+        color: #bdb9b5;
+        padding: 0 15px;
+        &.active, &:active, &:focus, {
+            color: #623232;
+            font-family: 'truenobold';
+            padding: 0 14px;
+        }
+        &:hover {
+            color: $pink;
+        }
+    }
+}
+.wrap-products {
+    height: 350px;
+    border: 1px solid #e0dfde;
+    position: relative;
+    margin-bottom: 30px;
+    transition: all .15s ease-in-out;
+    &:hover {
+        box-shadow: rgba(0,0,0,0.15) 0 6px 20px;
+        top: -3px;
+        transition: all .15s ease-in-out;
+    }
+    .discount {
+        position: absolute;
+        right: 0;
+        top: 25px;
+        color: #fff;
+        font-family: 'truenobold';
+        padding: 2px 10px;
+        background-color: $pink;
+        z-index: 10;
+    }
+    .products {
+        height: 200px;
+        width: 200px;
+        position: relative;
+        margin: 28px auto 0 auto;
+        cursor: pointer;
+        img {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: -1;
+        }
+        .prod-price {
+            color: #8a8784;
+            font-size: 24px;
+        }
+        #prod-price {
+            color: $pink;
+        }
+        .old-price {
+            color: #8a8784;
+            text-decoration: line-through;
+        }
+    }
+    .descr {
+        position: absolute;
+        left: 29px;
+        bottom: 23px;
+        .head {
+            font-family: 'truenobold';
+            color: #8a8784;
+            cursor: pointer;
+        }
+        .model {
+            color: #8a8784;
+            text-transform: capitalize;
+            cursor: pointer;
+        }
+        .article {
+            color: #bdb9b5;
+            font-size: 13px;
+        }
+    }
+}
 
+
+
+//    box-shadow: rgba(0,0,0,0.15) 0 6px 20px;
+//    top: -3px;
 
 

@@ -161,7 +161,6 @@ nav.navbar-default {
 #arrival-left {
   text-align: center;
   font-size: 30px;
-  padding-left: 0;
   background: url("../img/intro/nike-kyrie-logo.png") 38px 23px no-repeat; }
   #arrival-left img {
     position: absolute;
@@ -290,7 +289,8 @@ nav.navbar-default {
 .wrap_4 {
   height: 255px;
   background-color: #CECECE;
-  position: relative; }
+  position: relative;
+  margin-bottom: 100px; }
   .wrap_4 img {
     position: absolute;
     width: 100%;
@@ -311,3 +311,77 @@ nav.navbar-default {
     font-size: 30px;
     text-transform: uppercase;
     font-family: 'truenobold'; }
+
+#categories {
+  text-align: center;
+  margin-bottom: 50px; }
+  #categories a {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #bdb9b5;
+    padding: 0 15px; }
+    #categories a.active, #categories a:active, #categories a:focus {
+      color: #623232;
+      font-family: 'truenobold';
+      padding: 0 14px; }
+    #categories a:hover {
+      color: #ff7270; }
+
+.wrap-products {
+  height: 350px;
+  border: 1px solid #e0dfde;
+  position: relative;
+  margin-bottom: 30px;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out; }
+  .wrap-products:hover {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0 6px 20px;
+            box-shadow: rgba(0, 0, 0, 0.15) 0 6px 20px;
+    top: -3px;
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out; }
+  .wrap-products .discount {
+    position: absolute;
+    right: 0;
+    top: 25px;
+    color: #fff;
+    font-family: 'truenobold';
+    padding: 2px 10px;
+    background-color: #ff7270;
+    z-index: 10; }
+  .wrap-products .products {
+    height: 200px;
+    width: 200px;
+    position: relative;
+    margin: 28px auto 0 auto;
+    cursor: pointer; }
+    .wrap-products .products img {
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+      z-index: -1; }
+    .wrap-products .products .prod-price {
+      color: #8a8784;
+      font-size: 24px; }
+    .wrap-products .products #prod-price {
+      color: #ff7270; }
+    .wrap-products .products .old-price {
+      color: #8a8784;
+      text-decoration: line-through; }
+  .wrap-products .descr {
+    position: absolute;
+    left: 29px;
+    bottom: 23px; }
+    .wrap-products .descr .head {
+      font-family: 'truenobold';
+      color: #8a8784;
+      cursor: pointer; }
+    .wrap-products .descr .model {
+      color: #8a8784;
+      text-transform: capitalize;
+      cursor: pointer; }
+    .wrap-products .descr .article {
+      color: #bdb9b5;
+      font-size: 13px; }
