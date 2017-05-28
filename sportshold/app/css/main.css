@@ -110,7 +110,8 @@ nav.navbar-default {
 #slider {
   height: 600px;
   background-color: #F0EFEE;
-  position: relative; }
+  position: relative;
+  margin-bottom: 50px; }
   #slider img {
     position: absolute;
     top: -41px;
@@ -156,3 +157,157 @@ nav.navbar-default {
       left: 4px;
       -webkit-box-shadow: 0px 0px 0px white;
               box-shadow: 0px 0px 0px white; }
+
+#arrival-left {
+  text-align: center;
+  font-size: 30px;
+  padding-left: 0;
+  background: url("../img/intro/nike-kyrie-logo.png") 38px 23px no-repeat; }
+  #arrival-left img {
+    position: absolute;
+    z-index: -1;
+    display: block; }
+  #arrival-left p {
+    color: #fff;
+    margin: 44px 0 10px 0; }
+  #arrival-left h3 {
+    color: #4bd8cd;
+    font-family: 'truenobold';
+    text-transform: uppercase;
+    margin-bottom: 337px; }
+  #arrival-left .myButt {
+    outline: none;
+    border: none;
+    padding: 14px 26px;
+    font-size: 16px;
+    background-color: #4bd8cd;
+    position: relative;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+    #arrival-left .myButt a {
+      color: #000;
+      text-transform: uppercase;
+      font-family: 'truenobold'; }
+  #arrival-left .one {
+    overflow: hidden;
+    color: #000; }
+    #arrival-left .one .insider {
+      background-color: #fff;
+      width: 100%;
+      height: 20px;
+      position: absolute;
+      left: -163px;
+      -webkit-transform: rotateZ(45deg);
+          -ms-transform: rotate(45deg);
+              transform: rotateZ(45deg); }
+    #arrival-left .one:hover {
+      background-color: #229b92; }
+      #arrival-left .one:hover .insider {
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        left: 156px; }
+
+#arrival-right-top .wrap {
+  height: 255px;
+  font-size: 30px;
+  background-color: #ff7270;
+  position: relative;
+  margin-bottom: 30px; }
+  #arrival-right-top .wrap img {
+    position: absolute;
+    top: -22px;
+    left: -11px; }
+
+#arrival-right-top .wrap_2 {
+  margin-left: 150px;
+  text-align: center;
+  font-size: 30px;
+  color: #fff; }
+  #arrival-right-top .wrap_2 p {
+    padding-top: 59px; }
+  #arrival-right-top .wrap_2 h3 {
+    font-family: 'truenobold';
+    text-transform: uppercase;
+    font-size: 30px;
+    padding-top: 9px;
+    padding-bottom: 20px; }
+  #arrival-right-top .wrap_2 .myButt2 {
+    outline: none;
+    border: none;
+    padding: 14px 30px;
+    font-size: 16px;
+    background-color: #633231;
+    position: relative;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+    #arrival-right-top .wrap_2 .myButt2 a {
+      text-transform: uppercase;
+      font-family: 'truenobold'; }
+  #arrival-right-top .wrap_2 .two {
+    overflow: hidden;
+    color: #000; }
+    #arrival-right-top .wrap_2 .two .insider {
+      background-color: #fff;
+      width: 100%;
+      height: 20px;
+      position: absolute;
+      left: -163px;
+      -webkit-transform: rotateZ(45deg);
+          -ms-transform: rotate(45deg);
+              transform: rotateZ(45deg); }
+    #arrival-right-top .wrap_2 .two:hover {
+      background-color: #522929; }
+      #arrival-right-top .wrap_2 .two:hover .insider {
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        left: 156px; }
+
+.wrap_3 {
+  height: 255px;
+  background-color: #2d2f2e;
+  position: relative; }
+  .wrap_3 img {
+    position: absolute;
+    width: 100%;
+    max-width: 255px; }
+  .wrap_3 p {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 146px; }
+  .wrap_3 h3 {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    padding-top: 8px;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'truenobold'; }
+    .wrap_3 h3 a {
+      color: #ff7270; }
+
+.wrap_4 {
+  height: 255px;
+  background-color: #CECECE;
+  position: relative; }
+  .wrap_4 img {
+    position: absolute;
+    width: 100%;
+    max-width: 255px;
+    bottom: 0; }
+  .wrap_4 p {
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 34px; }
+    .wrap_4 p a {
+      color: #6b7072; }
+  .wrap_4 h3 {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    padding-top: 8px;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'truenobold'; }

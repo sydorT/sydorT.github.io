@@ -123,6 +123,7 @@ nav.navbar-default {
     height: 600px;
     background-color: #F0EFEE;
     position: relative;
+    margin-bottom: 50px;
     img {
         position: absolute;
         top: -41px;
@@ -171,6 +172,181 @@ nav.navbar-default {
             left: 4px;
             box-shadow: 0px 0px 0px lighten($pink, 30%);
         }
+    }
+}
+//INTRO
+#arrival-left {
+    text-align: center;
+    font-size: 30px;
+    padding-left: 0;
+    background: url('../img/intro/nike-kyrie-logo.png') 38px 23px no-repeat;
+    img {
+        position: absolute;
+        z-index: -1;
+        display: block;
+    }
+    p {
+        color: #fff;
+        margin: 44px 0 10px 0;
+    }
+    h3 {
+        color: #4bd8cd;
+        font-family: 'truenobold';
+        text-transform: uppercase;
+        margin-bottom: 337px;
+    }
+    .myButt {
+        outline: none;
+        border: none;
+        padding: 14px 26px;
+        font-size: 16px;
+        background-color: #4bd8cd;
+        position: relative;
+        transition: all 0.5s ease;
+        a {
+            color: #000;
+            text-transform: uppercase;
+            font-family: 'truenobold';
+        }
+    }
+    .one {
+        overflow: hidden;
+        color: #000;
+        .insider {
+            background-color: #fff;
+            width: 100%;
+            height: 20px;
+            position: absolute;
+            left: -163px;
+            transform: rotateZ(45deg);
+        }
+        &:hover  {
+            background-color: darken(#4bd8cd, 20%);
+            .insider {
+                transition: all 0.3s ease;
+                left:156px;
+            }
+        }
+    }
+}
+#arrival-right-top {
+    .wrap {
+        height: 255px;
+        font-size: 30px;
+        background-color: $pink;  
+        position: relative;
+        margin-bottom: 30px;
+        img {
+            position: absolute;
+            top: -22px;
+            left: -11px;
+        }
+    }
+    .wrap_2 {
+        margin-left: 150px;
+        text-align: center;
+        font-size: 30px;
+        color: #fff;
+        p {
+            padding-top: 59px;
+        }
+        h3 {
+            font-family: 'truenobold';
+            text-transform: uppercase;
+            font-size: 30px;
+            padding-top: 9px;
+            padding-bottom: 20px;
+        }
+        .myButt2 {
+            outline: none;
+            border: none;
+            padding: 14px 30px;
+            font-size: 16px;
+            background-color: $brownlight;
+            position: relative;
+            transition: all 0.5s ease;
+            a {
+                text-transform: uppercase;
+                font-family: 'truenobold';
+            }
+        }
+        .two {
+            overflow: hidden;
+            color: #000;
+            .insider {
+                background-color: #fff;
+                width: 100%;
+                height: 20px;
+                position: absolute;
+                left: -163px;
+                transform: rotateZ(45deg);
+            }
+            &:hover  {
+                background-color: darken($brownlight, 5%);
+                .insider {
+                    transition: all 0.3s ease;
+                    left:156px;
+                }
+            }
+        }
+    }
+}
+.wrap_3 {
+    height: 255px;
+    background-color: #2d2f2e;
+    position: relative;
+    img {
+        position: absolute;
+        width: 100%;
+        max-width: 255px;
+    }
+    p {
+        position: relative;
+        color: #fff;
+        text-align: center;
+        font-size: 30px;
+        padding-top: 146px;
+    }
+    h3 {
+        position: relative;
+        color: #fff;
+        text-align: center;
+        padding-top: 8px;
+        font-size: 30px;
+        text-transform: uppercase;
+        font-family: 'truenobold';
+        a {
+            color: $pink;
+        }
+    }
+}
+.wrap_4 {
+    height: 255px;
+    background-color: #CECECE;
+    position: relative;
+    img {
+        position: absolute;
+        width: 100%;
+        max-width: 255px;
+        bottom: 0;
+    }
+    p {
+        position: relative;
+        text-align: center;
+        font-size: 30px;
+        padding-top: 34px;
+        a {
+            color: #6b7072;
+        }
+    }
+    h3 {
+        position: relative;
+        color: #fff;
+        text-align: center;
+        padding-top: 8px;
+        font-size: 30px;
+        text-transform: uppercase;
+        font-family: 'truenobold';
     }
 }
 
