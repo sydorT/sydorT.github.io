@@ -43,9 +43,11 @@ section {
             display: inline-block;
             line-height: 50px;
             padding: 0 20px;
+            transition: all 0.3s ease;
             &:hover {
                 background-color: $pink;
                 cursor: pointer;
+                transition: all 0.3s ease;
             }
         }
     }
@@ -75,9 +77,11 @@ section {
     p {
         display: inline-block;
         padding: 0 20px;
+        transition: all 0.3s ease;
         &:hover {
             background-color: $pink;
             cursor: pointer;
+            transition: all 0.3s ease;
         }
     }
 }
@@ -105,11 +109,22 @@ nav.navbar-default {
             a {
                 background-color: transparent;
                 color: #fff;
-                padding-bottom: 24px;
+                padding-bottom: 0;
+                &::after {
+                    content: '';
+                    display: block;
+                    height: 4px;
+                    background-color: $pink;
+                    margin-top: 24px;
+                    width: 0%;
+                    transition: all ease-in-out 250ms;
+                }
                 &:hover, &:active, &:focus {
                     color: $pink;
-                    border-bottom: 4px solid $pink;
                     background-color: transparent;
+                }
+                &:hover::after, &:focus::after {
+                    width: 100%;
                 }
             }
         }
@@ -293,7 +308,12 @@ nav.navbar-default {
 .wrap_3 {
     height: 255px;
     background-color: #2d2f2e;
-    position: relative;
+    overflow: hidden;
+    transition: all 0.2s ease;
+    &:hover {
+            transform: scale(1.1);
+            transition: all 0.2s ease;
+        }
     img {
         position: absolute;
         width: 100%;
@@ -324,6 +344,11 @@ nav.navbar-default {
     background-color: #CECECE;
     position: relative;
     margin-bottom: 100px;
+    transition: all 0.2s ease;
+    &:hover {
+            transform: scale(1.1);
+            transition: all 0.2s ease;
+        }
     img {
         position: absolute;
         width: 100%;
@@ -372,7 +397,7 @@ nav.navbar-default {
     height: 350px;
     border: 1px solid #e0dfde;
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 83px;
     transition: all .15s ease-in-out;
     &:hover {
         box-shadow: rgba(0,0,0,0.15) 0 6px 20px;
@@ -433,10 +458,15 @@ nav.navbar-default {
         }
     }
 }
-
-
-
-//    box-shadow: rgba(0,0,0,0.15) 0 6px 20px;
-//    top: -3px;
+#owl {
+    margin-bottom: 100px;
+    .mid {
+        text-align: center;
+    }
+    img {
+        width: inherit;
+        display: inline-block;
+    }
+}
 
 

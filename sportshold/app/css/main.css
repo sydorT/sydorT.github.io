@@ -52,10 +52,14 @@ section {
 .top_nav_left ul li {
   display: inline-block;
   line-height: 50px;
-  padding: 0 20px; }
+  padding: 0 20px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
   .top_nav_left ul li:hover {
     background-color: #ff7270;
-    cursor: pointer; }
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
 
 .floa_right {
   float: right; }
@@ -77,10 +81,14 @@ section {
     border-left: 1px solid #593938; }
   .top_nav_right p {
     display: inline-block;
-    padding: 0 20px; }
+    padding: 0 20px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
     .top_nav_right p:hover {
       background-color: #ff7270;
-      cursor: pointer; }
+      cursor: pointer;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
 
 nav.navbar-default {
   background-color: #633231;
@@ -98,11 +106,21 @@ nav.navbar-default {
   nav.navbar-default .navbar-nav li a, nav.navbar-default .navbar-nav li.active a {
     background-color: transparent;
     color: #fff;
-    padding-bottom: 24px; }
+    padding-bottom: 0; }
+    nav.navbar-default .navbar-nav li a::after, nav.navbar-default .navbar-nav li.active a::after {
+      content: '';
+      display: block;
+      height: 4px;
+      background-color: #ff7270;
+      margin-top: 24px;
+      width: 0%;
+      -webkit-transition: all ease-in-out 250ms;
+      transition: all ease-in-out 250ms; }
     nav.navbar-default .navbar-nav li a:hover, nav.navbar-default .navbar-nav li a:active, nav.navbar-default .navbar-nav li a:focus, nav.navbar-default .navbar-nav li.active a:hover, nav.navbar-default .navbar-nav li.active a:active, nav.navbar-default .navbar-nav li.active a:focus {
       color: #ff7270;
-      border-bottom: 4px solid #ff7270;
       background-color: transparent; }
+    nav.navbar-default .navbar-nav li a:hover::after, nav.navbar-default .navbar-nav li a:focus::after, nav.navbar-default .navbar-nav li.active a:hover::after, nav.navbar-default .navbar-nav li.active a:focus::after {
+      width: 100%; }
 
 .nav_links_top {
   margin-top: 13px; }
@@ -264,7 +282,15 @@ nav.navbar-default {
 .wrap_3 {
   height: 255px;
   background-color: #2d2f2e;
-  position: relative; }
+  overflow: hidden;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+  .wrap_3:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
   .wrap_3 img {
     position: absolute;
     width: 100%;
@@ -290,7 +316,15 @@ nav.navbar-default {
   height: 255px;
   background-color: #CECECE;
   position: relative;
-  margin-bottom: 100px; }
+  margin-bottom: 100px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+  .wrap_4:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
   .wrap_4 img {
     position: absolute;
     width: 100%;
@@ -331,7 +365,7 @@ nav.navbar-default {
   height: 350px;
   border: 1px solid #e0dfde;
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 83px;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out; }
   .wrap-products:hover {
@@ -385,3 +419,11 @@ nav.navbar-default {
     .wrap-products .descr .article {
       color: #bdb9b5;
       font-size: 13px; }
+
+#owl {
+  margin-bottom: 100px; }
+  #owl .mid {
+    text-align: center; }
+  #owl img {
+    width: inherit;
+    display: inline-block; }

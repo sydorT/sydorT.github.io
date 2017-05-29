@@ -13,6 +13,7 @@
     <link rel="shortcut icon" href="app/img/favicon/favicon.png">    
     <link rel="stylesheet" href="app/libs/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="app/libs/animate/animate.css">
+    <link rel="stylesheet" href="app/libs/OwlCarousel2/owl.carousel.min.css">
     <link rel="stylesheet" href="app/css/main.css">
   </head>
   <body>
@@ -161,7 +162,7 @@
             </div>
         </section>        
 <!--PRODUCTS-->
-        <div class="section container">
+        <section class="container">
             <div class="row">
                 <div class="col-lg-12" id="categories">
                     <a href="#" class="active">NEW</a>
@@ -286,20 +287,50 @@
                         </div>
                     </div>    
                 </div>
-                
-                
-                
             </div>
-        </div>
-        
+        </section>
+<!--BRAND-CAROUSEL-->
+        <aside>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 owl-carousel" id="owl">
+                        <div class="mid"><img src="app/img/icon/addidas.png" alt="addidas"></div>
+                        <div class="mid"><img src="app/img/icon/nike.png" alt="nike"></div>
+                        <div class="mid"><img src="app/img/icon/puma.png" alt="puma"></div>
+                        <div class="mid"><img src="app/img/icon/asics.png" alt="asics"></div>
+                        <div class="mid"><img src="app/img/icon/nb.png" alt="nb"></div>
+                        <div class="mid"><img src="app/img/icon/fils.png" alt="fils"></div>
+                    </div>
+                </div>
+            </div>
+        </aside>
         
 <!--FOOTER-->
     
     <script src="app/libs/jquery/jquery-3.2.1.min.js"></script>    
     <script src="app/libs/bootstrap/bootstrap.min.js"></script>
+    <script src="app/libs/OwlCarousel2/owl.carousel.min.js"></script>
     <script src="app/libs/animate/wow.min.js"></script>
     <script>
         new WOW().init();
+    </script>
+    <script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel({
+                nav: true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:3
+                    },
+                    1000:{
+                        items:6
+                    }
+                }
+            });
+        });  
     </script>
     <!--[if lt IE 9]>
 	<script src="app/libs/html5shiv/es5-shim.min.js"></script>
