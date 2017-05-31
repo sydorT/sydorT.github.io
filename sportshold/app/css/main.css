@@ -423,7 +423,69 @@ nav.navbar-default {
 #owl {
   margin-bottom: 100px; }
   #owl .mid {
-    text-align: center; }
+    text-align: center;
+    height: 68px;
+    position: relative; }
   #owl img {
     width: inherit;
-    display: inline-block; }
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+  #owl .owl-prev, #owl .owl-next {
+    position: absolute;
+    top: 20px;
+    font-size: 50px;
+    color: #ccc;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%); }
+  #owl .owl-prev {
+    left: 15px; }
+  #owl .owl-next {
+    right: 15px; }
+
+#testimonials-wrap {
+  margin: 0 auto 102px auto;
+  background: url("../img/testimonials/testimonials_bg.jpg") center bottom no-repeat;
+  background-size: cover;
+  padding: 0; }
+  #testimonials-wrap #testimonials_bg {
+    height: 570px;
+    background-color: rgba(72, 36, 35, 0.9); }
+  #testimonials-wrap #testimonials-top {
+    height: 261px;
+    text-align: center;
+    font-family: 'truenobold'; }
+    #testimonials-wrap #testimonials-top .user-profile {
+      display: inline-block;
+      margin-top: 102px;
+      padding: 0 15px; }
+      #testimonials-wrap #testimonials-top .user-profile p {
+        margin-top: 20px; }
+      #testimonials-wrap #testimonials-top .user-profile p.non-active a {
+        color: #A99898; }
+      #testimonials-wrap #testimonials-top .user-profile p.active a {
+        color: #fff; }
+  #testimonials-wrap #testimonials-bot {
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 47px 52px;
+    text-align: center;
+    margin-top: 20px; }
+    #testimonials-wrap #testimonials-bot::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      width: 0;
+      height: 0;
+      top: -20px;
+      border-style: solid;
+      border-width: 0 20px 20px 20px;
+      border-color: transparent transparent rgba(255, 255, 255, 0.1) transparent; }
+    #testimonials-wrap #testimonials-bot p {
+      color: #fff; }
