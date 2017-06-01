@@ -26,6 +26,39 @@ section {
     position: relative;
     margin-bottom: 20px;
 }
+//BUTTON
+.my_btn {
+    outline: none;
+    border: none;
+    padding: 14px 30px;
+    font-size: 16px;
+    background-color: $brownlight;
+    position: relative;
+    transition: all 0.5s ease;
+    a {
+        text-transform: uppercase;
+        font-family: 'truenobold';
+    }
+}
+.one {
+    overflow: hidden;
+    color: #000;
+    .insider {
+        background-color: #fff;
+        width: 100%;
+        height: 20px;
+        position: absolute;
+        left: -163px;
+        transform: rotateZ(45deg);
+    }
+    &:hover  {
+        background-color: darken($brownlight, 5%);
+        .insider {
+            transition: all 0.3s ease;
+            left:156px;
+        }
+    }
+}
 
 //NAVBAR
 //TOP MENU
@@ -63,6 +96,9 @@ section {
         top: 50%;
         margin-top: -10px;
         left: 35px;
+        &:hover {
+            cursor: pointer;
+        }
     }
     .price {
         color: #fff;
@@ -209,38 +245,14 @@ nav.navbar-default {
         text-transform: uppercase;
         margin-bottom: 337px;
     }
-    .myButt {
-        outline: none;
-        border: none;
-        padding: 14px 26px;
-        font-size: 16px;
+    .my_btn {
         background-color: #4bd8cd;
-        position: relative;
-        transition: all 0.5s ease;
         a {
             color: #000;
-            text-transform: uppercase;
-            font-family: 'truenobold';
         }
     }
-    .one {
-        overflow: hidden;
-        color: #000;
-        .insider {
-            background-color: #fff;
-            width: 100%;
-            height: 20px;
-            position: absolute;
-            left: -163px;
-            transform: rotateZ(45deg);
-        }
-        &:hover  {
-            background-color: darken(#4bd8cd, 20%);
-            .insider {
-                transition: all 0.3s ease;
-                left:156px;
-            }
-        }
+    .one:hover {
+        background-color: darken(#4bd8cd, 20%);
     }
 }
 #arrival-right-top {
@@ -270,38 +282,6 @@ nav.navbar-default {
             font-size: 30px;
             padding-top: 9px;
             padding-bottom: 20px;
-        }
-        .myButt2 {
-            outline: none;
-            border: none;
-            padding: 14px 30px;
-            font-size: 16px;
-            background-color: $brownlight;
-            position: relative;
-            transition: all 0.5s ease;
-            a {
-                text-transform: uppercase;
-                font-family: 'truenobold';
-            }
-        }
-        .two {
-            overflow: hidden;
-            color: #000;
-            .insider {
-                background-color: #fff;
-                width: 100%;
-                height: 20px;
-                position: absolute;
-                left: -163px;
-                transform: rotateZ(45deg);
-            }
-            &:hover  {
-                background-color: darken($brownlight, 5%);
-                .insider {
-                    transition: all 0.3s ease;
-                    left:156px;
-                }
-            }
         }
     }
 }
@@ -530,13 +510,188 @@ nav.navbar-default {
             position: absolute;
             width: 0;
             height: 0;
-            top: -20px;
+            top: 0;
             border-style: solid;
             border-width: 0 20px 20px 20px;
             border-color: transparent transparent rgba(255,255,255,0.1) transparent;
         }
         p {
             color: #fff;
+        }
+    }
+}
+//LATEST NEWS
+#latest-news {
+    text-align: center;
+    margin-bottom: 100px;
+    h2 {
+        margin-bottom: 50px;
+        a {
+            font-size: 30px;
+            text-transform: uppercase;
+            color: #623232;
+            font-family: 'truenobold';
+        }
+    }
+    .wrap_news {
+        height: 350px;
+        background-color: #472424;
+        position: relative;
+        overflow: hidden;
+        img {
+            position: absolute;
+            height: 350px;
+            left: -117px;
+            top: 0;
+            opacity: 0.5;
+        }
+        .desc-news {
+            position: absolute;
+            color: #fff;
+            text-align: left;
+            bottom: 30px;
+            left: 30px;
+            time {
+                font-family: 'truenobold';
+            }
+            span {
+                color: #ff7373;
+                font-size: 13px;
+                display: block;
+                margin-left: 27px;
+                &::before {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    width: 20px;
+                    height: 20px;
+                    left: 0;
+                    bottom: 0;
+                    background: url("../img/icon/comment.png") 0 0 no-repeat;
+                }
+            }
+        }
+    }
+}
+//ORDER
+#order {
+    height: 200px;
+    background-color: $pink;
+    margin-bottom: 0;
+    h1 {
+        font-family: 'truenobold';
+        font-size: 30px;
+        text-transform: uppercase;
+        margin: 73px 0 5px 90px;
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 60px;
+            height: 42px;
+            left: 15px;
+            bottom: 10px;
+            cursor: pointer;
+            background: url("../img/icon/letter.png") 0 0 no-repeat;
+        }
+    }
+    p {
+        color: #fff;
+        margin-left: 90px;
+    }
+    .my_btn {
+        float: right;
+        margin-top: 76px;
+    }
+}
+//FOOTER
+footer {
+    height: 731px;
+    background-color: $brownlight;
+    .foot-top {
+        text-align: center;
+        margin-top: 50px;
+        padding-bottom: 45px;
+        border-bottom: 1px solid #7A504F;
+        p {
+            color: #fff;
+            margin-top: 27px;
+        }
+        .last-img {
+            margin-bottom: 11px;
+        }
+    }
+    .foot-hov {
+        transition: all 0.3s ease;
+        &:hover {
+            border-left: 1px solid #7A504F;
+            border-right: 1px solid #7A504F;
+            transition: all 0.3s ease;
+            a {
+                color: $pink;
+                transition: all 0.3s ease;
+            }
+        }
+    }
+    .foot-mid {
+        padding: 100px 0 100px 0;
+        border-bottom: 1px solid #7A504F;
+        .personal-data-icon {
+            height: 55px;
+            width: 55px;
+            background-color: $pink;
+            margin-bottom: 20px;
+            position: relative;
+            float: left;
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+        }
+        .personal-data {
+            padding-bottom: 25px;
+            margin-left: 75px;
+            h3 {
+                font-family: 'truenobold';
+                font-size: 16px;
+                color: $pink;
+                text-transform: uppercase;
+                margin-bottom: 4px;
+                padding-top: 7px;
+            }
+            p {
+                color: #fff;
+                &:hover a {
+                    text-decoration: underline;
+                }
+            }
+        }
+        .foot-menu {
+            h3 {
+                margin-bottom: 10px;
+                a {
+                    font-family: 'truenobold';
+                    font-size: 16px;
+                    color: $pink;
+                    text-transform: uppercase;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+            li {
+                margin-bottom: 11px;
+                transition: all 0.2s ease;
+                a {
+                    transition: all 0.2s ease;
+                    &:hover {
+                        text-shadow: 1px 1px 0 rgba(255,255,255,1) , -1px -1px 0 rgba(255,255,255,1) , 1px -1px 0 rgba(255,255,255,1) , -1px 1px 0 rgba(255,255,255,1) , 4px 4px 8px rgba(226,226,226,1) , -4px 4px 8px rgba(222,223,224,1) , 4px -4px 8px rgba(221,221,221,1) , -4px -4px 8px rgba(216,216,216,1) ;
+                        transition: all 0.2s ease;
+                    }
+                }
+            }
         }
     }
 }

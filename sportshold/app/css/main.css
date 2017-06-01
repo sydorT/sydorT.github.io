@@ -41,11 +41,43 @@ section {
   position: relative;
   margin-bottom: 20px; }
 
+.my_btn {
+  outline: none;
+  border: none;
+  padding: 14px 30px;
+  font-size: 16px;
+  background-color: #623232;
+  position: relative;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+  .my_btn a {
+    text-transform: uppercase;
+    font-family: 'truenobold'; }
+
+.one {
+  overflow: hidden;
+  color: #000; }
+  .one .insider {
+    background-color: #fff;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    left: -163px;
+    -webkit-transform: rotateZ(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotateZ(45deg); }
+  .one:hover {
+    background-color: #512929; }
+    .one:hover .insider {
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      left: 156px; }
+
 #paddin {
   padding-left: 0; }
 
 #top_bg_color {
-  background-color: #482423;
+  background-color: #472424;
   height: 50px;
   font-size: 13px; }
 
@@ -72,6 +104,8 @@ section {
     top: 50%;
     margin-top: -10px;
     left: 35px; }
+    .top_nav_right img:hover {
+      cursor: pointer; }
   .top_nav_right .price {
     color: #fff; }
   .top_nav_right .quantity {
@@ -91,7 +125,7 @@ section {
       transition: all 0.3s ease; }
 
 nav.navbar-default {
-  background-color: #633231;
+  background-color: #623232;
   border: none;
   -webkit-border-radius: 0;
           border-radius: 0;
@@ -137,12 +171,12 @@ nav.navbar-default {
   #slider .price-slider {
     margin-top: 133px;
     font-size: 30px;
-    color: #633231; }
+    color: #623232; }
   #slider h2 {
     margin-top: 18px;
     font-family: 'truenoultrablack';
     font-size: 70px;
-    color: #633231; }
+    color: #623232; }
   #slider .variants {
     margin-top: 24px;
     font-family: 'truenoultrablack';
@@ -192,37 +226,12 @@ nav.navbar-default {
     font-family: 'truenobold';
     text-transform: uppercase;
     margin-bottom: 337px; }
-  #arrival-left .myButt {
-    outline: none;
-    border: none;
-    padding: 14px 26px;
-    font-size: 16px;
-    background-color: #4bd8cd;
-    position: relative;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease; }
-    #arrival-left .myButt a {
-      color: #000;
-      text-transform: uppercase;
-      font-family: 'truenobold'; }
-  #arrival-left .one {
-    overflow: hidden;
-    color: #000; }
-    #arrival-left .one .insider {
-      background-color: #fff;
-      width: 100%;
-      height: 20px;
-      position: absolute;
-      left: -163px;
-      -webkit-transform: rotateZ(45deg);
-          -ms-transform: rotate(45deg);
-              transform: rotateZ(45deg); }
-    #arrival-left .one:hover {
-      background-color: #229b92; }
-      #arrival-left .one:hover .insider {
-        -webkit-transition: all 0.3s ease;
-        transition: all 0.3s ease;
-        left: 156px; }
+  #arrival-left .my_btn {
+    background-color: #4bd8cd; }
+    #arrival-left .my_btn a {
+      color: #000; }
+  #arrival-left .one:hover {
+    background-color: #229b92; }
 
 #arrival-right-top .wrap {
   height: 255px;
@@ -248,36 +257,6 @@ nav.navbar-default {
     font-size: 30px;
     padding-top: 9px;
     padding-bottom: 20px; }
-  #arrival-right-top .wrap_2 .myButt2 {
-    outline: none;
-    border: none;
-    padding: 14px 30px;
-    font-size: 16px;
-    background-color: #633231;
-    position: relative;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease; }
-    #arrival-right-top .wrap_2 .myButt2 a {
-      text-transform: uppercase;
-      font-family: 'truenobold'; }
-  #arrival-right-top .wrap_2 .two {
-    overflow: hidden;
-    color: #000; }
-    #arrival-right-top .wrap_2 .two .insider {
-      background-color: #fff;
-      width: 100%;
-      height: 20px;
-      position: absolute;
-      left: -163px;
-      -webkit-transform: rotateZ(45deg);
-          -ms-transform: rotate(45deg);
-              transform: rotateZ(45deg); }
-    #arrival-right-top .wrap_2 .two:hover {
-      background-color: #522929; }
-      #arrival-right-top .wrap_2 .two:hover .insider {
-        -webkit-transition: all 0.3s ease;
-        transition: all 0.3s ease;
-        left: 156px; }
 
 .wrap_3 {
   height: 255px;
@@ -483,9 +462,156 @@ nav.navbar-default {
       position: absolute;
       width: 0;
       height: 0;
-      top: -20px;
+      top: 0;
       border-style: solid;
       border-width: 0 20px 20px 20px;
       border-color: transparent transparent rgba(255, 255, 255, 0.1) transparent; }
     #testimonials-wrap #testimonials-bot p {
       color: #fff; }
+
+#latest-news {
+  text-align: center;
+  margin-bottom: 100px; }
+  #latest-news h2 {
+    margin-bottom: 50px; }
+    #latest-news h2 a {
+      font-size: 30px;
+      text-transform: uppercase;
+      color: #623232;
+      font-family: 'truenobold'; }
+  #latest-news .wrap_news {
+    height: 350px;
+    background-color: #472424;
+    position: relative;
+    overflow: hidden; }
+    #latest-news .wrap_news img {
+      position: absolute;
+      height: 350px;
+      left: -117px;
+      top: 0;
+      opacity: 0.5; }
+    #latest-news .wrap_news .desc-news {
+      position: absolute;
+      color: #fff;
+      text-align: left;
+      bottom: 30px;
+      left: 30px; }
+      #latest-news .wrap_news .desc-news time {
+        font-family: 'truenobold'; }
+      #latest-news .wrap_news .desc-news span {
+        color: #ff7373;
+        font-size: 13px;
+        display: block;
+        margin-left: 27px; }
+        #latest-news .wrap_news .desc-news span::before {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 20px;
+          height: 20px;
+          left: 0;
+          bottom: 0;
+          background: url("../img/icon/comment.png") 0 0 no-repeat; }
+
+#order {
+  height: 200px;
+  background-color: #ff7270;
+  margin-bottom: 0; }
+  #order h1 {
+    font-family: 'truenobold';
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 73px 0 5px 90px; }
+    #order h1::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 60px;
+      height: 42px;
+      left: 15px;
+      bottom: 10px;
+      cursor: pointer;
+      background: url("../img/icon/letter.png") 0 0 no-repeat; }
+  #order p {
+    color: #fff;
+    margin-left: 90px; }
+  #order .my_btn {
+    float: right;
+    margin-top: 76px; }
+
+footer {
+  height: 731px;
+  background-color: #623232; }
+  footer .foot-top {
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 45px;
+    border-bottom: 1px solid #7A504F; }
+    footer .foot-top p {
+      color: #fff;
+      margin-top: 27px; }
+    footer .foot-top .last-img {
+      margin-bottom: 11px; }
+  footer .foot-hov {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    footer .foot-hov:hover {
+      border-left: 1px solid #7A504F;
+      border-right: 1px solid #7A504F;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      footer .foot-hov:hover a {
+        color: #ff7270;
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease; }
+  footer .foot-mid {
+    padding: 100px 0 100px 0;
+    border-bottom: 1px solid #7A504F; }
+    footer .foot-mid .personal-data-icon {
+      height: 55px;
+      width: 55px;
+      background-color: #ff7270;
+      margin-bottom: 20px;
+      position: relative;
+      float: left; }
+      footer .foot-mid .personal-data-icon img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%); }
+    footer .foot-mid .personal-data {
+      padding-bottom: 25px;
+      margin-left: 75px; }
+      footer .foot-mid .personal-data h3 {
+        font-family: 'truenobold';
+        font-size: 16px;
+        color: #ff7270;
+        text-transform: uppercase;
+        margin-bottom: 4px;
+        padding-top: 7px; }
+      footer .foot-mid .personal-data p {
+        color: #fff; }
+        footer .foot-mid .personal-data p:hover a {
+          text-decoration: underline; }
+    footer .foot-mid .foot-menu h3 {
+      margin-bottom: 10px; }
+      footer .foot-mid .foot-menu h3 a {
+        font-family: 'truenobold';
+        font-size: 16px;
+        color: #ff7270;
+        text-transform: uppercase; }
+        footer .foot-mid .foot-menu h3 a:hover {
+          text-decoration: underline; }
+    footer .foot-mid .foot-menu li {
+      margin-bottom: 11px;
+      -webkit-transition: all 0.2s ease;
+      transition: all 0.2s ease; }
+      footer .foot-mid .foot-menu li a {
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease; }
+        footer .foot-mid .foot-menu li a:hover {
+          text-shadow: 1px 1px 0 white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 4px 4px 8px #e2e2e2, -4px 4px 8px #dedfe0, 4px -4px 8px #dddddd, -4px -4px 8px #d8d8d8;
+          -webkit-transition: all 0.2s ease;
+          transition: all 0.2s ease; }
