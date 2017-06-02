@@ -615,3 +615,19 @@ footer {
           text-shadow: 1px 1px 0 white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 4px 4px 8px #e2e2e2, -4px 4px 8px #dedfe0, 4px -4px 8px #dddddd, -4px -4px 8px #d8d8d8;
           -webkit-transition: all 0.2s ease;
           transition: all 0.2s ease; }
+  footer .foot-bot h1 a {
+    padding-top: 23px; }
+  footer .foot-bot p {
+    color: #fff;
+    line-height: 78px; }
+  footer .foot-bot .fa {
+    font-size: 25px;
+    float: right;
+    margin-left: 25px;
+    line-height: 78px;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
+    footer .foot-bot .fa:hover {
+      text-shadow: 1px 1px 0 #ff5188, -1px -1px 0 #ff5998, 1px -1px 0 #f4588e, -1px 1px 0 #ff4fa4, 4px 4px 8px #ff447f, -4px 4px 8px #f9137f, 4px -4px 8px #fc2d64, -4px -4px 8px #ff1c54;
+      -webkit-transition: all 0.2s ease;
+      transition: all 0.2s ease; }
