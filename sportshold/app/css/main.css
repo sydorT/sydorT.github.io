@@ -78,6 +78,9 @@ section {
   @media (max-width: 768px) {
     #paddin {
       padding-left: 15px; } }
+  @media (max-width: 767px) {
+    #paddin {
+      padding-right: 0; } }
   #paddin .navbar-toggle-my {
     border-color: #ddd;
     float: left; }
@@ -121,6 +124,9 @@ section {
 .top_nav_right {
   line-height: 50px;
   float: right; }
+  @media (max-width: 767px) {
+    .top_nav_right {
+      padding-right: 0; } }
   .top_nav_right img {
     top: 50%;
     margin-top: -10px; }
@@ -163,7 +169,7 @@ nav.navbar-default {
       min-height: 0; } }
   nav.navbar-default h1 a.navbar-brand {
     padding-top: 20px; }
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       nav.navbar-default h1 a.navbar-brand {
         padding: 9px 15px; } }
   nav.navbar-default .navbar-nav li a, nav.navbar-default .navbar-nav li.active a {
@@ -189,7 +195,7 @@ nav.navbar-default {
       nav.navbar-default .navbar-nav li a, nav.navbar-default .navbar-nav li.active a {
         padding-left: 9px;
         padding-right: 9px; } }
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       nav.navbar-default .navbar-nav li a, nav.navbar-default .navbar-nav li.active a {
         padding-top: 0;
         text-align: center; } }
@@ -279,10 +285,18 @@ nav.navbar-default {
 
 #arrival-left {
   text-align: center;
-  font-size: 30px; }
+  font-size: 30px;
+  position: relative; }
   @media (max-width: 1199px) {
     #arrival-left {
       margin-bottom: 73px; } }
+  @media (max-width: 587px) {
+    #arrival-left {
+      height: 320px;
+      width: 320px;
+      margin-bottom: 0;
+      float: none;
+      margin: 0 auto; } }
   #arrival-left img {
     position: absolute;
     z-index: -1;
@@ -300,6 +314,10 @@ nav.navbar-default {
   #arrival-left p {
     color: #fff;
     margin: 44px 0 10px 0; }
+    @media (max-width: 587px) {
+      #arrival-left p {
+        margin: -15px 0 10px 0;
+        padding-top: 163px; } }
   #arrival-left h3 {
     color: #4bd8cd;
     font-family: 'truenobold';
@@ -307,7 +325,7 @@ nav.navbar-default {
     margin-bottom: 337px; }
     @media (max-width: 587px) {
       #arrival-left h3 {
-        margin-bottom: 10px; } }
+        margin-bottom: 0; } }
   #arrival-left .my_btn {
     background-color: #4bd8cd; }
     #arrival-left .my_btn a {
@@ -326,6 +344,9 @@ nav.navbar-default {
       margin: 0 auto;
       width: 540px;
       margin-bottom: 30px; } }
+  @media (max-width: 587px) {
+    #arrival-right-top .wrap {
+      width: 290px; } }
   #arrival-right-top .wrap img {
     position: absolute;
     top: -22px;
@@ -336,14 +357,19 @@ nav.navbar-default {
   text-align: center;
   font-size: 30px;
   color: #fff; }
+  @media (max-width: 587px) {
+    #arrival-right-top .wrap_2 {
+      margin-left: 0; } }
   #arrival-right-top .wrap_2 p {
-    padding-top: 59px; }
+    padding-top: 59px;
+    position: relative; }
   #arrival-right-top .wrap_2 h3 {
     font-family: 'truenobold';
     text-transform: uppercase;
     font-size: 30px;
     padding-top: 9px;
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    position: relative; }
 
 .wrap_3 {
   height: 255px;
@@ -422,9 +448,19 @@ nav.navbar-default {
     text-transform: uppercase;
     font-family: 'truenobold'; }
 
+@media (max-width: 591px) {
+  .col-my {
+    width: 100%;
+    max-width: 290px;
+    margin: 0 auto;
+    float: none; } }
+
 #categories {
   text-align: center;
   margin-bottom: 50px; }
+  @media (max-width: 591px) {
+    #categories {
+      margin-bottom: 25px; } }
   #categories a {
     font-size: 30px;
     text-transform: uppercase;
@@ -436,6 +472,9 @@ nav.navbar-default {
       padding: 0 14px; }
     #categories a:hover {
       color: #ff7270; }
+    @media (max-width: 591px) {
+      #categories a {
+        line-height: 1.3; } }
 
 .wrap-products {
   height: 350px;
@@ -447,9 +486,6 @@ nav.navbar-default {
   @media (max-width: 992px) {
     .wrap-products {
       margin-bottom: 30px; } }
-  @media (max-width: 591px) {
-    .wrap-products {
-      width: 100%; } }
   .wrap-products:hover {
     -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0 6px 20px;
             box-shadow: rgba(0, 0, 0, 0.15) 0 6px 20px;
@@ -504,6 +540,9 @@ nav.navbar-default {
 
 #owl {
   margin-bottom: 100px; }
+  @media (max-width: 992px) {
+    #owl {
+      margin-bottom: 50px; } }
   #owl .mid {
     text-align: center;
     height: 68px;
@@ -536,6 +575,9 @@ nav.navbar-default {
   background: url("../img/testimonials/testimonials_bg.jpg") center bottom no-repeat;
   background-size: cover;
   padding: 0; }
+  @media (max-width: 992px) {
+    #testimonials-wrap {
+      margin: 0 auto 55px auto; } }
   #testimonials-wrap #testimonials_bg {
     min-height: 570px;
     background-color: rgba(72, 36, 35, 0.9); }
@@ -687,7 +729,7 @@ nav.navbar-default {
   #order .my_btn {
     float: right;
     margin-top: 76px; }
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       #order .my_btn {
         margin: 27px 0 20px 0;
         float: none; } }
@@ -729,6 +771,12 @@ footer {
   footer .foot-mid {
     padding: 100px 0 100px 0;
     border-bottom: 1px solid #7A504F; }
+    @media (max-width: 768px) {
+      footer .foot-mid {
+        padding: 50px 0 30px 0; } }
+    @media (max-width: 767px) {
+      footer .foot-mid .col-my-2 {
+        text-align: center; } }
     footer .foot-mid .personal-data-icon {
       height: 55px;
       width: 55px;
@@ -746,6 +794,9 @@ footer {
     footer .foot-mid .personal-data {
       padding-bottom: 25px;
       margin-left: 75px; }
+      @media (max-width: 767px) {
+        footer .foot-mid .personal-data {
+          margin-left: 0; } }
       footer .foot-mid .personal-data h3 {
         font-family: 'truenobold';
         font-size: 16px;
@@ -757,6 +808,9 @@ footer {
         color: #fff; }
         footer .foot-mid .personal-data p:hover a {
           text-decoration: underline; }
+    @media (max-width: 768px) {
+      footer .foot-mid .foot-menu {
+        display: none; } }
     footer .foot-mid .foot-menu h3 {
       margin-bottom: 10px; }
       footer .foot-mid .foot-menu h3 a {
@@ -814,3 +868,30 @@ footer {
         footer .foot-bot .fa {
           line-height: 0;
           padding-bottom: 30px; } }
+
+#accordion {
+  display: none; }
+  @media (max-width: 768px) {
+    #accordion {
+      display: block;
+      text-align: center;
+      width: 60%;
+      float: right; }
+      #accordion .panel {
+        background-color: transparent;
+        border: none; }
+      #accordion .panel-body {
+        border-top: none; }
+      #accordion .panel-heading {
+        background-color: transparent; }
+        #accordion .panel-heading a {
+          font-family: 'truenobold';
+          font-size: 16px;
+          color: #ff7270;
+          text-transform: uppercase;
+          margin-bottom: 4px;
+          padding-top: 7px; } }
+  @media (max-width: 767px) {
+    #accordion {
+      float: none;
+      width: 100%; } }
