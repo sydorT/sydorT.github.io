@@ -64,11 +64,9 @@ section {
 //TOP MENU
 #paddin {
     padding-left: 0;
-    @media (max-width: 768px) {
-        padding-left: 15px;
-    }
     @media (max-width: 767px) {
         padding-right: 0;
+        padding-left: 15px;
     }
     .navbar-toggle-my {    
         border-color: #ddd;
@@ -755,7 +753,7 @@ nav.navbar-default {
     @media (max-width: 768px) {
         margin: 0 auto;
         float: none;
-        width: 350px
+        width: 320px
     }
 }
 //ORDER
@@ -850,16 +848,16 @@ footer {
             width: 50%;
         }
     }
+    .my-col-2 {
+        @media (max-width: 489px) {
+            width: 100%;
+        }
+    }
     .foot-mid {
         padding: 100px 0 100px 0;
         border-bottom: 1px solid #7A504F;
         @media (max-width: 768px) {
             padding: 50px 0 30px 0;
-        }
-        .col-my-2 {
-            @media (max-width: 767px) {
-                text-align: center;
-            }
         }
         .personal-data-icon {
             height: 55px;
@@ -878,9 +876,6 @@ footer {
         .personal-data {
             padding-bottom: 25px;
             margin-left: 75px;
-            @media (max-width: 767px) {
-                margin-left: 0;
-            }
             h3 {
                 font-family: 'truenobold';
                 font-size: 16px;
@@ -973,9 +968,7 @@ footer {
     @media (max-width: 768px) {
         display: block;
         text-align: center;
-        width: 60%;
-        float: right;
-        .panel {
+                .panel {
             background-color: transparent;
             border: none;
         }
@@ -994,9 +987,8 @@ footer {
             }
         }
     }
-    @media (max-width: 767px) {
-        float: none;
-        width: 100%;
+    @media (max-width: 489px) {
+        width: 220%;
     }
 }
 
