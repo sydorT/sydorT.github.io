@@ -1,47 +1,47 @@
 $(function() {
     updateStats();
     
-    $('.checks').change(function() {
+    $('.skills-control-checkbox').change(function() {
         var currentArea = $('.my-skill').attr('data-area');
         updateStats(currentArea);
     });
 
     
-    $('.icon-wrap .icon').on('mouseenter', function() {
+    $('.stats-chart-piece').on('mouseenter', function() {
         $('.is-active').removeClass('is-active');
         
         $(this).addClass('is-active');
-        $('.icon-wrap .icon:not(.is-active)').addClass('is-minimized');
+        $('.stats-chart .stats-chart-piece:not(.is-active)').addClass('is-minimized');
         
         var area = $(this).attr('data-area');
         
         var mySkill;
         switch(area) {
             case 'js':
-                mySkill = 'JavaScript';
-                break;
+            mySkill = 'JavaScript';
+            break;
             case 'css':
-                mySkill = 'CSS';
-                break;
+            mySkill = 'CSS';
+            break;
             case 'framework':
-                mySkill = 'Frameworks';
-                break;
+            mySkill = 'Frameworks';
+            break;
         }
-        $('.my-skill').text(mySkill).attr('data-area', area);
+        $('.stats-area').text(mySkill).attr('data-area', area);
         updateStats();
     })
 
-    $('.icon-wrap .icon').on('mouseleave', function() {
+    $('.stats-chart-piece').on('mouseleave', function() {
         $(this).removeClass('is-active');
         $('.is-minimized').removeClass('is-minimized');
     });
     
     function updateStats() {
-        var area = $('.my-skill').attr('data-area');
+        var area = $('.stats-area').attr('data-area');
         var percentage = calculatePercentagePerField('check-' + area);
-        $('.counter').text(percentage)
-            .removeClass('counter-js counter-css counter-framework')
-            .addClass('counter-' + area);
+        $('.stats-counter').text(percentage)
+        .removeClass('counter-js counter-css counter-framework')
+        .addClass('counter-' + area);
         var degree = getDegree(percentage);
         $('.icon-arrow').css('transform', 'rotate(' + degree +'deg)');
     }
