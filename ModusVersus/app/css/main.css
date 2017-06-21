@@ -619,14 +619,14 @@ footer #ftr3 {
     @media (max-width: 850px) {
       footer #ftr3 .testim_img p {
         width: 150px; } }
-  footer #ftr3 .testim_img time {
+  footer #ftr3 .testim_img span {
     color: #000000;
     opacity: 0.5;
     font-size: 13px;
     line-height: 20px;
     margin-left: 100px; }
     @media (max-width: 850px) {
-      footer #ftr3 .testim_img time {
+      footer #ftr3 .testim_img span {
         display: block;
         margin-top: 30px; } }
   footer #ftr3 #bot_img {
