@@ -49,10 +49,9 @@ section {
   background-color: #623232;
   position: relative;
   -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
-  .my_btn a {
-    text-transform: uppercase;
-    font-family: 'truenobold'; }
+  transition: all 0.5s ease;
+  text-transform: uppercase;
+  font-family: 'truenobold'; }
 
 .one {
   overflow: hidden;
@@ -368,6 +367,8 @@ nav.navbar-default {
     padding-top: 9px;
     padding-bottom: 20px;
     position: relative; }
+  #arrival-right-top .wrap_2 button {
+    color: #fff; }
 
 .wrap_3 {
   height: 255px;
@@ -515,7 +516,7 @@ nav.navbar-default {
     .wrap-products .products .prod-price {
       color: #8a8784;
       font-size: 24px; }
-    .wrap-products .products #prod-price {
+    .wrap-products .products .price-color {
       color: #ff7270; }
     .wrap-products .products .old-price {
       color: #8a8784;
@@ -660,8 +661,6 @@ nav.navbar-default {
       text-align: left;
       bottom: 30px;
       left: 30px; }
-      #latest-news .wrap_news .desc-news time {
-        font-family: 'truenobold'; }
       #latest-news .wrap_news .desc-news span {
         color: #ff7373;
         font-size: 13px;
@@ -676,6 +675,9 @@ nav.navbar-default {
           left: 0;
           bottom: 0;
           background: url("../img/icon/comment.png") 0 0 no-repeat; }
+      #latest-news .wrap_news .desc-news .time {
+        font-family: 'truenobold';
+        margin-left: 0; }
 
 @media (max-width: 768px) {
   #wrap_news {
@@ -726,7 +728,8 @@ nav.navbar-default {
         margin-left: 0; } }
   #order .my_btn {
     float: right;
-    margin-top: 76px; }
+    margin-top: 76px;
+    color: #fff; }
     @media (max-width: 767px) {
       #order .my_btn {
         margin: 27px 0 20px 0;

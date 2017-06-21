@@ -35,10 +35,8 @@ section {
     background-color: $brownlight;
     position: relative;
     transition: all 0.5s ease;
-    a {
-        text-transform: uppercase;
-        font-family: 'truenobold';
-    }
+    text-transform: uppercase;
+    font-family: 'truenobold';
 }
 .one {
     overflow: hidden;
@@ -395,6 +393,9 @@ nav.navbar-default {
             padding-bottom: 20px;
             position: relative;
         }
+        button {
+            color: #fff;
+        }
     }
 }
 .wrap_3 {
@@ -549,7 +550,7 @@ nav.navbar-default {
             color: #8a8784;
             font-size: 24px;
         }
-        #prod-price {
+        .price-color {
             color: $pink;
         }
         .old-price {
@@ -727,9 +728,6 @@ nav.navbar-default {
             text-align: left;
             bottom: 30px;
             left: 30px;
-            time {
-                font-family: 'truenobold';
-            }
             span {
                 color: #ff7373;
                 font-size: 13px;
@@ -745,6 +743,10 @@ nav.navbar-default {
                     bottom: 0;
                     background: url("../img/icon/comment.png") 0 0 no-repeat;
                 }
+            }
+            .time {
+                font-family: 'truenobold';
+                margin-left: 0;
             }
         }
     }
@@ -804,6 +806,7 @@ nav.navbar-default {
     .my_btn {
         float: right;
         margin-top: 76px;
+        color: #fff;
         @media (max-width: 767px) {
             margin: 27px 0 20px 0;
             float: none;
