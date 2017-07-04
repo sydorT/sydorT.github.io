@@ -8,9 +8,11 @@ $(document).ready(function () {
         $(this).css('background-position', moveX + 'px ' + moveY + 'px');
     });
 
-    $('#main-nav1').removeClass('default')
+    $('#main-nav1').wrap('<div class="nav-placeholder"></div>');
+    $('.nav-placeholder').height($('#main-nav1').outerHeight());
+
     $(window).scroll(function() {
-        if ($(this).scrollTop() > 20) {
+        if ($(this).scrollTop() > 17) {
             $('#main-nav1').addClass('default').fadeIn('slow');
         } else {
             $('#main-nav1').removeClass('default').fadeIn('slow');
