@@ -14,7 +14,7 @@ $(document).ready(function () {
 
 
     $('#nav-wraper').wrap('<div class="nav-placeholder"></div>');
-    $('.nav-placeholder').height($('#nav-wraper').outerHeight());
+    //$('.nav-placeholder').height($('#nav-wraper').outerHeight());
 
     $(window).scroll(function() {
         if ($(this).scrollTop() > 0) {
