@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+	<title>TSF</title>
+	<link rel="shortcut icon" href="img/favicon/favicon.png">	
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>	
+	<header class="header">
+		<div class="overlay">
+			<div class="container">
+				<nav>
+					<a href=""><img class="logo" src="img/logo.png" alt="logo"></a>
+					<div class="social">						
+						<a href=""><svg xmlns="http://www.w3.org/2000/svg" width="33" height="21" viewBox="0 0 160 93"><defs><path id="a" d="M155.91 80.49c-.19-.4-.36-.75-.53-1.02-2.71-4.89-7.9-10.9-15.56-18l-.16-.17-.08-.08-.09-.08h-.08c-3.47-3.31-5.67-5.54-6.6-6.68-1.68-2.18-2.06-4.37-1.14-6.6.65-1.69 3.1-5.24 7.33-10.67 2.23-2.88 4-5.2 5.3-6.93 9.4-12.5 13.47-20.48 12.22-23.95l-.48-.82c-.33-.48-1.17-.93-2.53-1.34-1.36-.4-3.1-.47-5.21-.2l-23.47.16a3.04 3.04 0 0 0-1.63.04l-1.06.25-.4.2-.33.24c-.27.17-.57.45-.9.86-.32.4-.6.88-.8 1.42a133 133 0 0 1-8.73 18.34 173.57 173.57 0 0 1-5.54 8.75 42.16 42.16 0 0 1-4.23 5.46 29.64 29.64 0 0 1-3.1 2.81c-.92.71-1.63 1-2.12.9l-1.38-.33a5.42 5.42 0 0 1-1.84-2 8.95 8.95 0 0 1-.93-3.17 34.97 34.97 0 0 1-.29-3.3c-.03-.92-.01-2.23.04-3.91.06-1.69.08-2.83.08-3.42 0-2.07.04-4.3.12-6.72l.2-5.75c.06-1.41.09-2.9.09-4.48 0-1.57-.1-2.81-.29-3.7-.18-.9-.47-1.77-.85-2.61a4.39 4.39 0 0 0-1.67-1.96 9.42 9.42 0 0 0-2.73-1.1 54.2 54.2 0 0 0-11-1.06c-10.1-.1-16.6.55-19.47 1.96-1.14.6-2.17 1.41-3.1 2.44-.97 1.2-1.11 1.85-.4 1.96 3.25.48 5.56 1.65 6.92 3.5l.49.98c.38.7.76 1.95 1.14 3.75.38 1.79.63 3.77.73 5.94.27 3.97.27 7.36 0 10.19-.27 2.82-.53 5.02-.77 6.6A13.21 13.21 0 0 1 59 42.8c-.16.21-.3.35-.4.4-.71.28-1.45.41-2.2.41-.77 0-1.69-.38-2.78-1.14a19.54 19.54 0 0 1-3.38-3.14 41.86 41.86 0 0 1-3.95-5.58 97.52 97.52 0 0 1-4.56-8.47l-1.3-2.36a202 202 0 0 1-3.34-6.64c-1.42-2.9-2.67-5.72-3.75-8.44a5.37 5.37 0 0 0-1.96-2.6l-.4-.25a8.69 8.69 0 0 0-3.18-1.22l-22.33.16c-2.28 0-3.82.52-4.64 1.55l-.33.49c-.16.27-.24.7-.24 1.3 0 .6.16 1.33.49 2.2C4 17.14 7.55 24.53 11.38 31.64a249.18 249.18 0 0 0 9.98 17.2c2.82 4.34 5.7 8.44 8.64 12.3a180.8 180.8 0 0 0 5.82 7.41c.95 1.09 1.7 1.9 2.24 2.44l2.04 1.96c1.3 1.3 3.22 2.87 5.74 4.68a97.96 97.96 0 0 0 8.4 5.38 45.54 45.54 0 0 0 10.71 4.32 37 37 0 0 0 11.9 1.35h9.36c1.9-.17 3.34-.77 4.32-1.8l.33-.4c.21-.33.42-.83.6-1.51.2-.68.3-1.43.3-2.24-.06-2.34.11-4.44.52-6.32.4-1.87.87-3.28 1.39-4.23a10.4 10.4 0 0 1 3.14-3.58c.27-.14.48-.24.65-.29 1.3-.44 2.83-.01 4.6 1.26a27.04 27.04 0 0 1 4.97 4.73c1.55 1.87 3.4 3.98 5.58 6.31a38.36 38.36 0 0 0 5.7 5.22l1.63.97c1.1.66 2.5 1.25 4.24 1.8 1.74.54 3.26.68 4.56.4l20.86-.32c2.06 0 3.67-.34 4.8-1.02 1.15-.68 1.82-1.43 2.04-2.24.22-.82.23-1.74.04-2.77a10.2 10.2 0 0 0-.57-2.16z"/></defs><g transform="translate(1 2)"><use xlink:href="#a"/></g></svg></a>
+						<a href=""><svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 129 129"><defs><path id="b" d="M125.07 15.98v93.04c0 4.4-1.57 8.17-4.72 11.32a15.45 15.45 0 0 1-11.33 4.73H15.98c-4.4 0-8.17-1.57-11.33-4.73a15.45 15.45 0 0 1-4.72-11.32V15.98c0-4.4 1.57-8.18 4.72-11.33A15.45 15.45 0 0 1 15.98-.07h93.04c4.4 0 8.18 1.57 11.33 4.72a15.45 15.45 0 0 1 4.72 11.33zM37.5 62.26c0 6.73 2.46 12.47 7.37 17.23a24.59 24.59 0 0 0 17.72 7.13c6.96 0 12.89-2.38 17.8-7.13a23.09 23.09 0 0 0 7.38-17.23 23.1 23.1 0 0 0-7.38-17.24 24.69 24.69 0 0 0-17.8-7.13c-6.9 0-12.8 2.38-17.72 7.13a23.1 23.1 0 0 0-7.37 17.24zm73.4 43.42v-52.8h-11a35.09 35.09 0 0 1 1.64 10.68A36.1 36.1 0 0 1 96.3 82.5a38.03 38.03 0 0 1-14.17 13.73 39.16 39.16 0 0 1-19.56 5.05c-10.7 0-19.85-3.68-27.45-11.04-7.6-7.36-11.41-16.25-11.41-26.68 0-3.7.54-7.25 1.63-10.68H13.86v52.8c0 1.41.48 2.6 1.43 3.54a4.8 4.8 0 0 0 3.54 1.43h87.1c1.35 0 2.52-.47 3.5-1.43a4.75 4.75 0 0 0 1.47-3.54zm0-86.2c0-1.52-.54-2.84-1.62-3.95a5.36 5.36 0 0 0-4-1.67H91.1c-1.58 0-2.9.56-4 1.67a5.47 5.47 0 0 0-1.62 3.95v13.44c0 1.58.54 2.91 1.63 4a5.43 5.43 0 0 0 3.99 1.63h14.17c1.58 0 2.91-.55 4-1.63a5.42 5.42 0 0 0 1.63-4z"/></defs><g transform="translate(2 2)"><use xlink:href="#b"/></g></svg></a>
+						<a href=""><svg xmlns="http://www.w3.org/2000/svg" width="29" height="21" viewBox="0 0 149 107"><defs><path id="c" d="M146.5 52.5c0 5.21-.03 9.29-.08 12.22-.06 2.93-.29 6.64-.7 11.12a90.2 90.2 0 0 1-1.83 12.02 19.06 19.06 0 0 1-5.62 10.02 17.18 17.18 0 0 1-10.1 4.73c-12.06 1.35-30.28 2.03-54.67 2.03s-42.61-.68-54.67-2.03A17.37 17.37 0 0 1 8.7 97.88a18.94 18.94 0 0 1-5.66-10.02c-.76-3.53-1.35-7.54-1.76-12.02-.4-4.48-.63-8.19-.69-11.12C.53 61.8.5 57.72.5 52.5c0-5.21.03-9.29.08-12.22.06-2.94.29-6.64.7-11.12.4-4.48 1.01-8.49 1.83-12.02.87-3.96 2.74-7.3 5.62-10.02a17.18 17.18 0 0 1 10.1-4.73C30.9 1.04 49.11.36 73.5.36s42.6.68 54.67 2.03c3.86.44 7.24 2.01 10.14 4.73 2.9 2.72 4.8 6.06 5.66 10.02.76 3.53 1.35 7.54 1.76 12.02.4 4.48.64 8.19.69 11.12.05 2.93.08 7 .08 12.22zm-41.71 0c0-2.01-.82-3.48-2.45-4.4L60.63 22.03a4.9 4.9 0 0 0-5.3-.16 4.85 4.85 0 0 0-2.69 4.56v52.14c0 2.07.9 3.58 2.7 4.56.86.44 1.7.65 2.52.65 1.08 0 2-.27 2.77-.8l41.71-26.08a4.7 4.7 0 0 0 2.45-4.4z"/></defs><g transform="translate(1 1)"><use xlink:href="#c"/></g></svg></a>
+					</div>
+				</nav>
+
+				<div class="header-content">
+					<div class="header-content-info">
+						<div class="header-content-item">
+							<svg width='18' height='18' fill="#e4312e" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 100 100" class="event" x="0px" y="0px"><title>2Artboard 49</title><path d="M82,32a6,6,0,0,0-6-6H72V23a5,5,0,0,0-10,0v3H38V23a5,5,0,0,0-10,0v3H24a6,6,0,0,0-6,6V76a6,6,0,0,0,6,6H76a6,6,0,0,0,6-6ZM74,74H26V42H74Z"/></svg>
+							2 ноября
+						</div>
+						<div class="header-content-item header-content-item-center">
+							<svg width='18' height='18' fill="#e4312e" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 100 100" class="time" x="0px" y="0px"><title>1Artboard 100</title><path d="M54,48.34l8.83,8.83-5.66,5.66L46,51.66V32h8ZM82,50A32,32,0,1,1,50,18,32,32,0,0,1,82,50Zm-8,0A24,24,0,1,0,50,74,24,24,0,0,0,74,50Z"/></svg>
+							17:30
+						</div>
+						<div class="header-content-item">
+							<svg width='18' height='20' fill="#e4312e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" class="pin" enable-background="new 0 0 100 100" xml:space="preserve"><path d="M50,15.885c-13.896,0-25.16,11.265-25.16,25.16S50,84.115,50,84.115s25.16-29.176,25.16-43.071S63.896,15.885,50,15.885z   M50,54c-7.548,0-13.667-6.119-13.667-13.667S42.452,26.666,50,26.666s13.667,6.119,13.667,13.667S57.548,54,50,54z"/></svg>
+							Концертный зал УлГПУ
+						</div>
+					</div>
+					<h1 class="main-title" >TRUE STORY FEST</h1>
+					<div class="header-content-desc">
+						Фестиваль правды о бизнесе. Никаких слащавых историй успеха.</br>Только реальные провалы реальных людей.
+					</div>
+					<div class="group-btn">
+						<a class="btn btn-red popup-active">Забронировать место</a>
+						<a class="btn btn-white">Посмотреть видео</a>
+					</div>
+				</div>				
+			</div>				
+		</div>					
+	</header>	
+	<div class="bottom-shadow"></div>
+		
+	<section class="container answer">
+		<h2 class="container-title">Найди ответы на фестивале правды:</h2>
+		<div class="answer-content">
+			<div class="answer-content-item">
+				<img class="icon wallet" src="img/wallet.png" alt="wallet">
+				Хочешь узнать, как делается</br>бизнес на самом деле?
+			</div>
+			<div class="answer-content-item">
+				<img class="icon flask" src="img/flask.png" alt="flask">
+				Хочешь учиться</br>на чужих ошибках?
+			</div>
+			<div class="answer-content-item">
+				<img class="icon browser" src="img/browser.png" alt="browser">
+				Надоело слушать истории</br>«успешных» предпринимателей?
+			</div>
+		</div>
+	</section>
+
+	<section class="speaker">
+		<div class="container">
+			<h2 class="container-title">Они будут предельно откровенны!</h2>
+
+			<div class="speaker-container">
+				<img src="img/speaker-img.jpg" alt="speaker">
+				<div class="speaker-container-footer">
+					<div class="speaker-container-title">Александр Крутов</div>
+				</div>
+				<div class="speaker-container-overlay">					
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="22" class="mark" viewBox="0 0 30 22 "><defs><path id="i" d="M562.93 1809.9c3.26 0 5.9 2.72 5.9 6.05a5.97 5.97 0 0 1-5.9 6.05c-3.26 0-5.9-2.7-5.9-6.05l-.03-.86c0-6.68 5.28-12.09 11.8-12.09v3.45a8.27 8.27 0 0 0-6.8 3.53c.3-.05.61-.07.93-.07zm15.17 0c3.26 0 5.9 2.72 5.9 6.05a5.97 5.97 0 0 1-5.9 6.05c-3.26 0-5.9-2.7-5.9-6.05l-.03-.86c0-6.68 5.29-12.09 11.8-12.09v3.45a8.27 8.27 0 0 0-6.8 3.53c.3-.05.61-.07.93-.07z"/></defs><g transform="translate(-555 -1801)"><use fill="#fff" xlink:href="#i"/></g></svg>
+					<span class="speaker-container-overlay-desc">5 миллионов долгов, гаража обуви и твой главный друг — коллектор</span>
+				</div>
+			</div>
+
+			<div class="speaker-container container-margin">
+				<img src="img/speaker-img.jpg" alt="speaker">
+				<div class="speaker-container-footer">
+					<div class="speaker-container-title">Александр Крутов</div>
+				</div>
+				<div class="speaker-container-overlay">					
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="22" class="mark" viewBox="0 0 30 22 "><defs><path id="h" d="M562.93 1809.9c3.26 0 5.9 2.72 5.9 6.05a5.97 5.97 0 0 1-5.9 6.05c-3.26 0-5.9-2.7-5.9-6.05l-.03-.86c0-6.68 5.28-12.09 11.8-12.09v3.45a8.27 8.27 0 0 0-6.8 3.53c.3-.05.61-.07.93-.07zm15.17 0c3.26 0 5.9 2.72 5.9 6.05a5.97 5.97 0 0 1-5.9 6.05c-3.26 0-5.9-2.7-5.9-6.05l-.03-.86c0-6.68 5.29-12.09 11.8-12.09v3.45a8.27 8.27 0 0 0-6.8 3.53c.3-.05.61-.07.93-.07z"/></defs><g transform="translate(-555 -1801)"><use fill="#fff" xlink:href="#h"/></g></svg>
+					<span class="speaker-container-overlay-desc">5 миллионов долгов, гаража обуви и твой главный друг — коллектор</span>
+				</div>
+			</div>
+
+			<div class="speaker-container">
+				<img src="img/speaker-img.jpg" alt="speaker">
+				<div class="speaker-container-footer">
+					<div class="speaker-container-title">Александр Крутов</div>
+				</div>
+				<div class="speaker-container-overlay">					
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="22" class="mark" viewBox="0 0 30 22 "><defs><path id="g" d="M562.93 1809.9c3.26 0 5.9 2.72 5.9 6.05a5.97 5.97 0 0 1-5.9 6.05c-3.26 0-5.9-2.7-5.9-6.05l-.03-.86c0-6.68 5.28-12.09 11.8-12.09v3.45a8.27 8.27 0 0 0-6.8 3.53c.3-.05.61-.07.93-.07zm15.17 0c3.26 0 5.9 2.72 5.9 6.05a5.97 5.97 0 0 1-5.9 6.05c-3.26 0-5.9-2.7-5.9-6.05l-.03-.86c0-6.68 5.29-12.09 11.8-12.09v3.45a8.27 8.27 0 0 0-6.8 3.53c.3-.05.61-.07.93-.07z"/></defs><g transform="translate(-555 -1801)"><use fill="#fff" xlink:href="#g"/></g></svg>
+					<span class="speaker-container-overlay-desc">5 миллионов долгов, гаража обуви и твой главный друг — коллектор</span>
+				</div>
+			</div>
+
+			<div class="speaker-container">
+				<img src="img/speaker-img.jpg" alt="speaker">
+				<div class="speaker-container-footer">
+					<div class="speaker-container-title">Александр Крутов</div>
+				</div>
+				<div class="speaker-container-overlay">					
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="22" class="mark" viewBox="0 0 30 22 "><defs><path id="y" d="M562.93 1809.9c3.26 0 5.9 2.72 5.9 6.05a5.97 5.97 0 0 1-5.9 6.05c-3.26 0-5.9-2.7-5.9-6.05l-.03-.86c0-6.68 5.28-12.09 11.8-12.09v3.45a8.27 8.27 0 0 0-6.8 3.53c.3-.05.61-.07.93-.07zm15.17 0c3.26 0 5.9 2.72 5.9 6.05a5.97 5.97 0 0 1-5.9 6.05c-3.26 0-5.9-2.7-5.9-6.05l-.03-.86c0-6.68 5.29-12.09 11.8-12.09v3.45a8.27 8.27 0 0 0-6.8 3.53c.3-.05.61-.07.93-.07z"/></defs><g transform="translate(-555 -1801)"><use fill="#fff" xlink:href="#y"/></g></svg>
+					<span class="speaker-container-overlay-desc">5 миллионов долгов, гаража обуви и твой главный друг — коллектор</span>
+				</div>
+			</div>
+
+			<div class="speaker-container container-margin">
+				<img src="img/speaker-img.jpg" alt="speaker">
+				<div class="speaker-container-footer">
+					<div class="speaker-container-title">Александр Крутов</div>
+				</div>
+				<div class="speaker-container-overlay">					
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="22" class="mark" viewBox="0 0 30 22 "><defs><path id="o" d="M562.93 1809.9c3.26 0 5.9 2.72 5.9 6.05a5.97 5.97 0 0 1-5.9 6.05c-3.26 0-5.9-2.7-5.9-6.05l-.03-.86c0-6.68 5.28-12.09 11.8-12.09v3.45a8.27 8.27 0 0 0-6.8 3.53c.3-.05.61-.07.93-.07zm15.17 0c3.26 0 5.9 2.72 5.9 6.05a5.97 5.97 0 0 1-5.9 6.05c-3.26 0-5.9-2.7-5.9-6.05l-.03-.86c0-6.68 5.29-12.09 11.8-12.09v3.45a8.27 8.27 0 0 0-6.8 3.53c.3-.05.61-.07.93-.07z"/></defs><g transform="translate(-555 -1801)"><use fill="#fff" xlink:href="#o"/></g></svg>
+					<span class="speaker-container-overlay-desc">5 миллионов долгов, гаража обуви и твой главный друг — коллектор</span>
+				</div>
+			</div>
+
+			<div class="speaker-container">
+				<img src="img/speaker-img.jpg" alt="speaker">
+				<div class="speaker-container-footer">
+					<div class="speaker-container-title">Александр Крутов</div>
+				</div>
+				<div class="speaker-container-overlay">					
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="22" class="mark" viewBox="0 0 30 22 "><defs><path id="k" d="M562.93 1809.9c3.26 0 5.9 2.72 5.9 6.05a5.97 5.97 0 0 1-5.9 6.05c-3.26 0-5.9-2.7-5.9-6.05l-.03-.86c0-6.68 5.28-12.09 11.8-12.09v3.45a8.27 8.27 0 0 0-6.8 3.53c.3-.05.61-.07.93-.07zm15.17 0c3.26 0 5.9 2.72 5.9 6.05a5.97 5.97 0 0 1-5.9 6.05c-3.26 0-5.9-2.7-5.9-6.05l-.03-.86c0-6.68 5.29-12.09 11.8-12.09v3.45a8.27 8.27 0 0 0-6.8 3.53c.3-.05.61-.07.93-.07z"/></defs><g transform="translate(-555 -1801)"><use fill="#fff" xlink:href="#k"/></g></svg>
+					<span class="speaker-container-overlay-desc">5 миллионов долгов, гаража обуви и твой главный друг — коллектор</span>
+				</div>
+			</div>
+
+			<div class="speaker-block-btn">
+				<a class="btn btn-red speaker-btn popup-active">Забронировать место</a>
+			</div>			
+
+		</div>	
+	</section>
+
+	<section class="section-video container" id="video">
+		<h2 class="container-title">Как это было в прошлый раз</h2>		
+		<iframe class="video" id="player" src="https://www.youtube.com/embed/1BPK0UZbNj0"></iframe>
+	</section>
+
+	<section class="form-section">
+		<div class="container">
+			<h2 class="container-title form-title">Приготовься услышать правду прямо сейчас!</h2>
+			<form action="#">
+				<input class="form-input input-name" type="text" placeholder="Ваше Имя">				
+				<input class="form-input input-email" type="email" placeholder="Ваш Email">
+				<input class="form-input input-tel" type="text" placeholder="Ваш Телефон">
+				<a class="btn btn-red form-btn" href="">Услышать правду</a>
+			</form>
+			<div class="form-text">Нажимая на кнопку, вы принимаете условия <a class="form-text-red condition">договора оферты</a> и автоматически даете <a class="form-text-red agreement">согласие на обработку персональных данных</a></div>
+		</div>
+	</section>
+
+	<section class="organizers">
+		<div class="container">
+			<h2 class="container-title black-title">Организаторы</h2>
+			<div class="container-logo">
+				<a href=""><img class="organizer1" src="img/organizer1.png" alt="organizer-logo"></a>
+				<a href=""><img class="organizer2" src="img/organizer2.png" alt="organizer-logo"></a>
+			</div>
+		</div>		
+	</section>
+
+	<section class="partners">
+		<div class="container">
+			<h2 class="container-title black-title">Партнеры</h2>
+			<div class="container-logo">
+				<a href=""><img class="partner-logo1" src="img/partner-pic1.png" alt="partner-logo"></a>
+				<a href=""><img class="partner-logo2" src="img/partner-pic2.png" alt="partner-logo"></a>
+			</div>
+		</div>		
+	</section>
+
+	<section class="map_s">
+		<div class="mymap" id="map"></div>
+
+		<div class="container">
+			<div class="contacts-container contact-abs">
+				<h2 class="container-title black-title contacts-title">Контакты</h2>
+
+				<div class="header-content-info content-info-margin">
+					<div class="header-content-item content-item-block contact-font-weight">
+						<svg width='18' height='18' fill="#e4312e" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 100 100" class="event" x="0px" y="0px"><title>2Artboard 49</title><path d="M82,32a6,6,0,0,0-6-6H72V23a5,5,0,0,0-10,0v3H38V23a5,5,0,0,0-10,0v3H24a6,6,0,0,0-6,6V76a6,6,0,0,0,6,6H76a6,6,0,0,0,6-6ZM74,74H26V42H74Z"/></svg>
+						2 ноября
+					</div>
+					<div class="header-content-item content-item-block contact-font-weight">
+						<svg width='18' height='18' fill="#e4312e" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 100 100" class="time" x="0px" y="0px"><title>1Artboard 100</title><path d="M54,48.34l8.83,8.83-5.66,5.66L46,51.66V32h8ZM82,50A32,32,0,1,1,50,18,32,32,0,0,1,82,50Zm-8,0A24,24,0,1,0,50,74,24,24,0,0,0,74,50Z"/></svg>
+						17:30
+					</div>
+					<div class="header-content-item content-item-block contact-font-weight">
+						<svg width='20' height='22' fill="#e4312e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" class="pin" enable-background="new 0 0 100 100" xml:space="preserve"><path d="M50,15.885c-13.896,0-25.16,11.265-25.16,25.16S50,84.115,50,84.115s25.16-29.176,25.16-43.071S63.896,15.885,50,15.885z   M50,54c-7.548,0-13.667-6.119-13.667-13.667S42.452,26.666,50,26.666s13.667,6.119,13.667,13.667S57.548,54,50,54z"/></svg>
+						Концертный зал УлГПУ
+					</div>
+					<div class="header-content-item content-item-block contact-font-weight">
+						<svg width='14' height='18' fill="#e4312e" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 100 100" class="contact-tel" x="0px" y="0px"><title>2Artboard 100</title><path d="M71,2H29A12,12,0,0,0,17,14V86A12,12,0,0,0,29,98H71A12,12,0,0,0,83,86V14A12,12,0,0,0,71,2ZM50,89a6,6,0,1,1,6-6A6,6,0,0,1,50,89ZM71,69.5H29V14H71Z"/></svg>
+						+7 (813) <span class="extrabold">633-02-08</span>
+					</div>									
+				</div>		
+			</div>
+		</div>		
+	</section>
+	
+	
+	<footer class="container footer">
+		<div class="cookies">Ваши персональные данные (cookie, данные об IP-адресе и местоположении) обрабатываются на сайте в целях его функционирования. Если вы не согласны с этим, пожалуйста, покиньте этот сайт. Если вы остаетесь на сайте - это будет являться Согласие на обработку персональных данных.</div>
+		<a href="" class="privacy-policy">Политика конфиденциальности</a>
+	</footer>
+
+	<div class="popup">
+		<h2 class="popup-title">TRUE STORY FEST</h2>
+		<form action="#">
+			<input class="modal-form popup-name" type="text" placeholder="Ваше Имя">				
+			<input class="modal-form modal-form-email popup-email" type="email" placeholder="Ваш Email">
+			<input class="modal-form popup-tel" type="text" placeholder="Ваш Телефон">
+			<a class="btn modal-btn" href="">Услышать правду</a>
+		</form>
+		<div class="form-text popup-form-text">Нажимая на кнопку, вы принимаете условия <a class="form-text-red condition2">договора оферты</a> и автоматически даете <a class="form-text-red agreement2">согласие на обработку персональных данных</a></div>
+	</div>
+
+	<div class="popup-condition">
+		<div class="popup-wrap">
+			<img class="close-window" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAFk0lEQVR4Xu2dW2hcRRiA/3/vaXZJHrxTQUQw0loLyQZUEJOFiO2TUGiF4qN5VVKIa6v1FlIRURAv9cFLKZpIsQ+KtdLd+pytaNFgCq0WfNE3Jbu57Gb3l3PiadLYvcycOWfOnP33NTPzn//75p85e7LMQeCPVgKoNToHBxageRKwABagmYDm8FwBLEAzAc3huQJYgGYCmsNzBbAAzQQ0h+cKCIuAxVx2PwI8DoQ7AWkAAHs156Y0PAH9g4RXAeknAjiTKZRmVQRwXQGVkaE9jQi+g4B3q7ggU8YgoN8QYTx9rnTOzTW7ElAeyeYBYQoQXY3jJgGtfYkIAPPp4tzrstchDa48mn0OEKdlA4eqH1E+XSwdk8lJSkB5dHAMMHIGACMyQcPXhxoAsDddKH0rmpuwABrb1VtZSy0AwnbRYOFuT3/0/rl0D87PV0XyFBawmBs6gBD5XCRIt7QlaDyZKVyYEclXWEA5l50BwP0iQbqnLc2mC6UDIvkKC1gczS4g4r0iQbqlLRFdyhRLAyL5igvIZf9GwD6RIN3S1vqylimU+kXyFRZQzg2TSIBua5suzAkxFWpswWQBracUC9BcciyABWgmoDm8kRWAPduAlpc0o1MT3jwBff2Qyk9B4/fLUP3wbQDrAaPHn+gDg3aE+sUflEcyS0BfP/QcfQMid9xpg6idP+u5BAt+cuKoHW/1zZeVSzBGAN50C6Sen7oG35mKXkpw4GMiYYejahVWpvLQuDSvrBKMEGDDt2b+zbfeMHEvJGyF7wSmlWVYmT6iTELgBeDt29dnfhP4XlRCM/heSAi8gMS+gxDfd7Cjkq99fxaqH7zVUdtmjdrBv07CS4egcfWKq3iBF2Bll3hqHOJ7nugoUTfLUafw7f1A0VJkhAA/JOiAb+VljAAvJeiCb5wAKQnHW+8JOuEbKUBYwjenoXri+A33D93wjRWgQkIQ4BstwI2EoMA3XoCMhPrFC/azHefxQqt7W1W3mq1iGHUX1CwRke8JVK8DRqNtv1P4AT8UFeCQFJHQjr5f8EMlQHQ5aibBT/ihE+BWgt/wQylAVoIO+KEVYCWWnHgBYtmH2y339t9pbQ1WXp1U9oy/o6D/NQrFXdDWhEXu852+tRbfmEWAirYNnQAZ+DolhEqAG/i6JIRGgAr4OiSEQoBK+H5LMF6ACHzrVrP+YwliDz7S0V7px8ZstABR+M7PSUQeW3gtwVgBsvBlnh15KcFIAW7hB0mCcQJUwb8mYfxZiI88pm1PMEqAavg2dURIPP2MNgnGCPAEvjPvNUowQoCn8DVLCLwAX+BrlBB4AcmJFyGWfajtJknLy7B67AjU3f52X2A5qn75GdS+ONH22lo1CLwAiMftXzHEdg81zUP5P1M6kFA7dRKqp066gm/OP2TicUgdnobowM7/JawcfgfLUXX2U6idVnMATPArwAGSTEEq/9p1EjyD30LC6kfvwtp3X7me+c4A5giwrniTBM/hb5EQe3QMqh+/pxS+OUvQpvmGqR5ITr4CtZlP3G+4AvM4et/9UP/1Z4EenTU1qwI6y8moVixAsy4WwAI0E9AcniuABWgmoDm85xWwyIf2NX+E4sehfXxsZfMS8+XYSj64tdUa58fBrXx0cYslyIeji2nHjkTltm2XAXD9lCX+2ASs5Sf919Iuzw/vtoJVRob3UgS+ZvYbBIgglynOFUWZCB/c6gTgFzhsQu33Cxw2JAxPAtB0V7/ChOBw+nxJ+k0i0hWwIWFwjDDyPr/ER3TxWW/vWoATdtNrrHYT0l3hO2GdKkC4AEi/BOo1VnLeuZdDQFkFMFI5AixAjpuyXixAGUq5gViAHDdlvViAMpRyA7EAOW7KerEAZSjlBmIBctyU9WIBylDKDcQC5Lgp68UClKGUG+hftB6Jju69hL8AAAAASUVORK5CYII=">
+
+			<h2>Политика конфиденциальности</h2>		
+	
+			<div>Настоящая Политика конфиденциальности персональной информации (далее — Политика) действует в отношении всей информации, которую юр.лицо ООО "ИНТЕНСИВ" (ОГРН: 1157325000568, ИНН: 7325134063,адрес регистрации: Ульяновская обл, г. Ульяновск, ул. Карла Маркса, д. 22/31) и/или его аффилированные лица, могут получить о пользователе во время использования им сайта <a href="http://tsf73.ru">http://tsf73.ru</a>. Использование сайта <a href="http://tsf73.ru">http://tsf73.ru</a> означает безоговорочное согласие пользователя с настоящей Политикой и указанными в ней условиями обработки его персональной информации; в случае несогласия с этими условиями пользователь должен воздержаться от использования данного ресурса. </div>
+			<div>1. Персональная информация пользователей, которую получает и обрабатывает сайт <a href="http://tsf73.ru">http://tsf73.ru</a></div>
+			<div>1.1. В рамках настоящей Политики под «персональной информацией пользователя» понимаются: </div>
+			<div>1.1.1. Персональная информация, которую пользователь предоставляет о себе самостоятельно при оставлении заявки, совершении покупки, регистрации (создании учётной записи) или в ином процессе использования сайта.</div>
+			<div>1.1.2 Данные, которые автоматически передаются сайтом <a href="http://tsf73.ru">http://tsf73.ru</a> в процессе его использования с помощью установленного на устройстве пользователя программного обеспечения, в том числе IP-адрес, информация из cookie, информация о браузере пользователя (или иной программе, с помощью которой осуществляется доступ к сайту), время доступа, адрес запрашиваемой страницы.</div>
+			<div>1.1.3. Данные, которые предоставляются сайту, в целях осуществления оказания услуг и/или продаже товара и/или предоставления иных ценностей для посетителей сайта, в соответствии с деятельностью настоящего ресурса: фамилия имя отчество электронная почта номер телефона месторасположение ссылка на персональный сайт или соцсети ip адрес </div>
+			<div>1.2. Настоящая Политика применима только к сайту <a href="http://tsf73.ru">http://tsf73.ru</a> и не контролирует и не несет ответственность за сайты третьих лиц, на которые пользователь может перейти по ссылкам, доступным на сайте <a href="http://tsf73.ru">http://tsf73.ru</a>. На таких сайтах у пользователя может собираться или запрашиваться иная персональная информация, а также могут совершаться иные действия.</div>
+			<div>1.3. Сайт в общем случае не проверяет достоверность персональной информации, предоставляемой пользователями, и не осуществляет контроль за их дееспособностью. Однако сайт <a href="http://tsf73.ru">http://tsf73.ru</a> исходит из того, что пользователь предоставляет достоверную и достаточную персональную информацию по вопросам, предлагаемым в формах настоящего ресурса, и поддерживает эту информацию в актуальном состоянии.</div>
+			<div>2. Цели сбора и обработки персональной информации пользователей</div>
+			<div>2.1. Сайт собирает и хранит только те персональные данные, которые необходимы для оказания услуг и/или продаже товара и/или предоставления иных ценностей для посетителей сайта <a href="http://tsf73.ru">http://tsf73.ru</a>.</div>
+			<div>2.2. Персональную информацию пользователя можно использовать в следующих целях:</div>
+			<div>2.2.1 Связь с пользователем, в том числе направление уведомлений, запросов и информации, касающихся использования сайта, оказания услуг, а также обработка запросов и заявок от пользователя </div>
+			<div>2.2.2 Таргетирование рекламных материалов</div>
+			<div>3. Условия обработки персональной информации пользователя и её передачи третьим лицам</div>
+			<div>3.1. Сайт <a href="http://tsf73.ru">http://tsf73.ru</a> хранит персональную информацию пользователей в соответствии с внутренними регламентами конкретных сервисов.</div>
+			<div>3.2. В отношении персональной информации пользователя сохраняется ее конфиденциальность, кроме случаев добровольного предоставления пользователем информации о себе для общего доступа неограниченному кругу лиц.</div>
+			<div>3.3. Сайт <a href="http://tsf73.ru">http://tsf73.ru</a> вправе передать персональную информацию пользователя третьим лицам в следующих случаях:</div>
+			<div>3.3.1. Пользователь выразил свое согласие на такие действия, путем согласия выразившегося в предоставлении таких данных;</div>
+			<div>3.3.2. Передача необходима в рамках использования пользователем определенного сайта <a href="http://tsf73.ru">http://tsf73.ru</a>, либо для предоставления товаров и/или оказания услуги пользователю;</div>
+			<div>3.3.3. Передача предусмотрена российским или иным применимым законодательством в рамках установленной законодательством процедуры;</div>
+			<div>3.3.4. В целях обеспечения возможности защиты прав и законных интересов сайта <a href="http://tsf73.ru">http://tsf73.ru</a> или третьих лиц в случаях, когда пользователь нарушает Пользовательское соглашение сайта <a href="http://tsf73.ru">http://tsf73.ru</a>.</div>
+			<div>3.4. При обработке персональных данных пользователей сайт <a href="http://tsf73.ru">http://tsf73.ru</a> руководствуется Федеральным законом РФ «О персональных данных».</div>
+			<div>4. Изменение пользователем персональной информации</div>
+			<div>4.1. Пользователь может в любой момент изменить (обновить, дополнить) предоставленную им персональную информацию или её часть, а также параметры её конфиденциальности, оставив заявление в адрес администрации сайта следующим способом: Email: <a href="mailto:info@intensivcentr.ru">info@intensivcentr.ru</a></div>
+			<div>4.2. Пользователь может в любой момент, отозвать свое согласие на обработку персональных данных, оставив заявление в адрес администрации сайта следующим способом: Email: <a href="mailto:info@intensivcentr.ru">info@intensivcentr.ru</a></div>
+			<div>5. Меры, применяемые для защиты персональной информации пользователей Сайт принимает необходимые и достаточные организационные и технические меры для защиты персональной информации пользователя от неправомерного или случайного доступа, уничтожения, изменения, блокирования, копирования, распространения, а также от иных неправомерных действий с ней третьих лиц.</div>
+			<div>6. Изменение Политики конфиденциальности. Применимое законодательство</div>
+			<div>6.1. Сайт имеет право вносить изменения в настоящую Политику конфиденциальности. При внесении изменений в актуальной редакции указывается дата последнего обновления. Новая редакция Политики вступает в силу с момента ее размещения, если иное не предусмотрено новой редакцией Политики.</div>
+			<div>6.2. К настоящей Политике и отношениям между пользователем и Сайтом, возникающим в связи с применением Политики конфиденциальности, подлежит применению право Российской Федерации.</div>
+			<div>7. Обратная связь. Вопросы и предложения</div>
+			<div>7.1. Все предложения или вопросы по поводу настоящей Политики следует направлять следующим способом: Email: <a href="mailto:info@intensivcentr.ru">info@intensivcentr.ru</a></div>
+
+		</div>
+	</div>
+
+
+	<div class="popup-agreement">
+
+		<div class="popup-wrap">
+			<img class="close-window" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAFk0lEQVR4Xu2dW2hcRRiA/3/vaXZJHrxTQUQw0loLyQZUEJOFiO2TUGiF4qN5VVKIa6v1FlIRURAv9cFLKZpIsQ+KtdLd+pytaNFgCq0WfNE3Jbu57Gb3l3PiadLYvcycOWfOnP33NTPzn//75p85e7LMQeCPVgKoNToHBxageRKwABagmYDm8FwBLEAzAc3huQJYgGYCmsNzBbAAzQQ0h+cKCIuAxVx2PwI8DoQ7AWkAAHs156Y0PAH9g4RXAeknAjiTKZRmVQRwXQGVkaE9jQi+g4B3q7ggU8YgoN8QYTx9rnTOzTW7ElAeyeYBYQoQXY3jJgGtfYkIAPPp4tzrstchDa48mn0OEKdlA4eqH1E+XSwdk8lJSkB5dHAMMHIGACMyQcPXhxoAsDddKH0rmpuwABrb1VtZSy0AwnbRYOFuT3/0/rl0D87PV0XyFBawmBs6gBD5XCRIt7QlaDyZKVyYEclXWEA5l50BwP0iQbqnLc2mC6UDIvkKC1gczS4g4r0iQbqlLRFdyhRLAyL5igvIZf9GwD6RIN3S1vqylimU+kXyFRZQzg2TSIBua5suzAkxFWpswWQBracUC9BcciyABWgmoDm8kRWAPduAlpc0o1MT3jwBff2Qyk9B4/fLUP3wbQDrAaPHn+gDg3aE+sUflEcyS0BfP/QcfQMid9xpg6idP+u5BAt+cuKoHW/1zZeVSzBGAN50C6Sen7oG35mKXkpw4GMiYYejahVWpvLQuDSvrBKMEGDDt2b+zbfeMHEvJGyF7wSmlWVYmT6iTELgBeDt29dnfhP4XlRCM/heSAi8gMS+gxDfd7Cjkq99fxaqH7zVUdtmjdrBv07CS4egcfWKq3iBF2Bll3hqHOJ7nugoUTfLUafw7f1A0VJkhAA/JOiAb+VljAAvJeiCb5wAKQnHW+8JOuEbKUBYwjenoXri+A33D93wjRWgQkIQ4BstwI2EoMA3XoCMhPrFC/azHefxQqt7W1W3mq1iGHUX1CwRke8JVK8DRqNtv1P4AT8UFeCQFJHQjr5f8EMlQHQ5aibBT/ihE+BWgt/wQylAVoIO+KEVYCWWnHgBYtmH2y339t9pbQ1WXp1U9oy/o6D/NQrFXdDWhEXu852+tRbfmEWAirYNnQAZ+DolhEqAG/i6JIRGgAr4OiSEQoBK+H5LMF6ACHzrVrP+YwliDz7S0V7px8ZstABR+M7PSUQeW3gtwVgBsvBlnh15KcFIAW7hB0mCcQJUwb8mYfxZiI88pm1PMEqAavg2dURIPP2MNgnGCPAEvjPvNUowQoCn8DVLCLwAX+BrlBB4AcmJFyGWfajtJknLy7B67AjU3f52X2A5qn75GdS+ONH22lo1CLwAiMftXzHEdg81zUP5P1M6kFA7dRKqp066gm/OP2TicUgdnobowM7/JawcfgfLUXX2U6idVnMATPArwAGSTEEq/9p1EjyD30LC6kfvwtp3X7me+c4A5giwrniTBM/hb5EQe3QMqh+/pxS+OUvQpvmGqR5ITr4CtZlP3G+4AvM4et/9UP/1Z4EenTU1qwI6y8moVixAsy4WwAI0E9AcniuABWgmoDm85xWwyIf2NX+E4sehfXxsZfMS8+XYSj64tdUa58fBrXx0cYslyIeji2nHjkTltm2XAXD9lCX+2ASs5Sf919Iuzw/vtoJVRob3UgS+ZvYbBIgglynOFUWZCB/c6gTgFzhsQu33Cxw2JAxPAtB0V7/ChOBw+nxJ+k0i0hWwIWFwjDDyPr/ER3TxWW/vWoATdtNrrHYT0l3hO2GdKkC4AEi/BOo1VnLeuZdDQFkFMFI5AixAjpuyXixAGUq5gViAHDdlvViAMpRyA7EAOW7KerEAZSjlBmIBctyU9WIBylDKDcQC5Lgp68UClKGUG+hftB6Jju69hL8AAAAASUVORK5CYII=">
+
+			<h2>ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ</h2>
+	
+			<div>1. ОБЩИЕ ПОЛОЖЕНИЯ</div>
+			<div>1.1. Настоящее Пользовательское соглашение (далее – Соглашение) относится к сайту «True Story Fest», расположенному по адресу http://tsf73.ru.</div>
+			<div>1.2. Сайт «True Story Fest» (далее – Сайт) является собственностью юридического лица ООО "ИНТЕНСИВ" (ОГРН: 1157325000568, ИНН: 7325134063,адрес регистрации: Ульяновская обл, г. Ульяновск, ул. Карла Маркса, д. 22/31).</div>
+			<div>1.3. Настоящее Соглашение регулирует отношения между Администрацией сайта «True Story Fest» (далее – Администрация сайта) и Пользователем данного Сайта.</div>
+			<div>1.4. Администрация сайта оставляет за собой право в любое время изменять, добавлять или удалять пункты настоящего Соглашения без уведомления Пользователя.</div>
+			<div>1.5. Использование Сайта Пользователем означает принятие Соглашения и изменений, внесенных в настоящее Соглашение.</div>
+			<div>1.6. Пользователь несет персональную ответственность за проверку настоящего Соглашения на наличие изменений в нем.</div>
+			<div>2. ОПРЕДЕЛЕНИЯ ТЕРМИНОВ</div>
+			<div>2.1. Перечисленные ниже термины имеют для целей настоящего Соглашения следующее значение:</div>
+			<div>2.1.1 «True Story Fest» – Интернет-ресурс, расположенный на доменном имени <a href="http://tsf73.ru">http://tsf73.ru</a>, осуществляющий свою деятельность посредством Интернет-ресурса и сопутствующих ему сервисов (далее - Сайт).</div>
+			<div>2.1.2. «True Story Fest» – сайт, содержащий информацию о Товарах и/или Услугах и/или Иных ценностях для пользователя, Продавце и/или Исполнителе услуг, позволяющий осуществить выбор, заказ и (или) приобретение Товара, и/или получение услуги.</div>
+			<div>2.1.3. Администрация сайта – уполномоченные сотрудники на управление Сайтом, действующие от имени юридического лица ООО "ИНТЕНСИВ".</div>
+			<div>2.1.4. Пользователь сайта (далее - Пользователь) – лицо, имеющее доступ к Сайту, посредством сети Интернет и использующее Сайт.</div>
+			<div>2.1.5. Содержание сайта (далее – Содержание) - охраняемые результаты интеллектуальной деятельности, включая тексты литературных произведений, их названия, предисловия, аннотации, статьи, иллюстрации, обложки, музыкальные произведения с текстом или без текста, графические, текстовые, фотографические, производные, составные и иные произведения, пользовательские интерфейсы, визуальные интерфейсы, названия товарных знаков, логотипы, программы для ЭВМ, базы данных, а также дизайн, структура, выбор, координация, внешний вид, общий стиль и расположение данного Содержания, входящего в состав Сайта и другие объекты интеллектуальной собственности все вместе и/или по отдельности, содержащиеся на сайте <a href="http://tsf73.ru">http://tsf73.ru</a>.</div>
+			<div>3. ПРЕДМЕТ СОГЛАШЕНИЯ</div>
+			<div>3.1. Предметом настоящего Соглашения является предоставление Пользователю доступа к содержащимся на Сайте Товарам и/или оказываемым услугам.</div>
+			<div>3.1.1. Сайт предоставляет Пользователю следующие виды услуг (сервисов):</div>
+			<div>3.1.2. Под действие настоящего Соглашения подпадают все существующие (реально функционирующие) на данный момент услуги (сервисы) Сайта, а также любые их последующие модификации и появляющиеся в дальнейшем дополнительные услуги (сервисы).</div>
+			<div>3.2. Доступ к сайту предоставляется на бесплатной основе.</div>
+			<div>3.3. Настоящее Соглашение является публичной офертой. Получая доступ к Сайту Пользователь считается присоединившимся к настоящему Соглашению.</div>
+			<div>3.4. Использование материалов и сервисов Сайта регулируется нормами действующего законодательства Российской Федерации.</div>
+			<div>4. ПРАВА И ОБЯЗАННОСТИ СТОРОН</div>
+			<div>4.1. Администрация сайта вправе:</div>
+			<div>4.1.1. Изменять правила пользования Сайтом, а также изменять содержание данного Сайта. Изменения вступают в силу с момента публикации новой редакции Соглашения на Сайте.</div>
+			<div>4.2. Пользователь вправе:</div>
+			<div>4.2.1. Пользоваться всеми имеющимися на Сайте услугами, а также приобретать любые Товары и/или Услуги, предлагаемые на Сайте.</div>
+			<div>4.2.2. Задавать любые вопросы, относящиеся к услугам сайта: по электронной почте: <a href="info@intensivcentr.ru">info@intensivcentr.ru</a></div>
+			<div>4.2.3. Пользоваться Сайтом исключительно в целях и порядке, предусмотренных Соглашением и не запрещенных законодательством Российской Федерации.</div>
+			<div>4.2.4. Копировать информацию с Сайта разрешается.</div>
+			<div>4.2.5. Требовать от администрации скрытия любой информации о пользователе.</div>
+			<div>4.2.6. Использовать информацию сайта в коммерческих целях без специального разрешения.</div>
+			<div>4.3. Пользователь Сайта обязуется:</div>
+			<div>4.3.1. Предоставлять по запросу Администрации сайта дополнительную информацию, которая имеет непосредственное отношение к предоставляемым услугам данного Сайта.</div>
+			<div>4.3.2. Соблюдать имущественные и неимущественные права авторов и иных правообладателей при использовании Сайта.</div>
+			<div>4.3.3. Не предпринимать действий, которые могут рассматриваться как нарушающие нормальную работу Сайта.</div>
+			<div>4.3.4. Не распространять с использованием Сайта любую конфиденциальную и охраняемую законодательством Российской Федерации информацию о физических либо юридических лицах.</div>
+			<div>4.3.5. Избегать любых действий, в результате которых может быть нарушена конфиденциальность охраняемой законодательством Российской Федерации информации.</div>
+			<div>4.3.6. Не использовать Сайт для распространения информации рекламного характера, иначе как с согласия Администрации сайта.</div>
+			<div>4.3.7. Не использовать сервисы с целью:</div>
+			<div>4.3.7.1. нарушения прав несовершеннолетних лиц и (или) причинение им вреда в любой форме.</div>
+			<div>4.3.7.2. ущемления прав меньшинств.</div>
+			<div>4.3.7.3. представления себя за другого человека или представителя организации и (или) сообщества без достаточных на то прав, в том числе за сотрудников данного сайта.</div>
+			<div>4.3.7.4. введения в заблуждение относительно свойств и характеристик какого-либо Товара и/или услуги, размещенных на Сайте.</div>
+			<div>4.3.7.5. некорректного сравнения Товара и/или Услуги, а также формирования негативного отношения к лицам, (не) пользующимся определенными Товарами и/или услугами, или осуждения таких лиц.</div>
+			<div>4.3.8. Обеспечить достоверность предоставляемой информации.</div>
+			<div>4.3.9. Обеспечивать сохранность личных данных от доступа третьих лиц.</div>
+			<div>4.4. Пользователю запрещается:</div>
+			<div>4.4.1. Использовать любые устройства, программы, процедуры, алгоритмы и методы, автоматические устройства или эквивалентные ручные процессы для доступа, приобретения, копирования или отслеживания содержания Сайта.</div>
+			<div>4.4.2. Нарушать надлежащее функционирование Сайта.</div>
+			<div>4.4.3. Любым способом обходить навигационную структуру Сайта для получения или попытки получения любой информации, документов или материалов любыми средствами, которые специально не представлены сервисами данного Сайта.</div>
+			<div>4.4.4. Несанкционированный доступ к функциям Сайта, любым другим системам или сетям, относящимся к данному Сайту, а также к любым услугам, предлагаемым на Сайте.</div>
+			<div>4.4.4. Нарушать систему безопасности или аутентификации на Сайте или в любой сети, относящейся к Сайту.</div>
+			<div>4.4.5. Выполнять обратный поиск, отслеживать или пытаться отслеживать любую информацию о любом другом Пользователе Сайта.</div>
+			<div>4.4.6. Использовать Сайт и его Содержание в любых целях, запрещенных законодательством Российской Федерации, а также подстрекать к любой незаконной деятельности или другой деятельности, нарушающей права Сайта или других лиц.</div>
+			<div>5. ИСПОЛЬЗОВАНИЕ САЙТА</div>
+			<div>5.1. Сайт и Содержание, входящее в состав Сайта, принадлежит и управляется Администрацией сайта.</div>
+			<div>5.2. Содержание Сайта защищено авторским правом, законодательством о товарных знаках, а также другими правами, связанными с интеллектуальной собственностью, и законодательством о недобросовестной конкуренции.</div>
+			<div>5.3. Настоящее Соглашение распространяет свое действия на все дополнительные положения и условия о покупке Товара и/или оказанию услуг, предоставляемых на Сайте.</div>
+			<div>5.4. Информация, размещаемая на Сайте не должна истолковываться как изменение настоящего Соглашения.</div>
+			<div>5.5. Администрация сайта имеет право в любое время без уведомления Пользователя вносить изменения в перечень Товаров и услуг, предлагаемых на Сайте, и (или) их цен.</div>
+			<div>5.6. Документ указанный в пункте 5.7.1 настоящего Соглашения регулирует в соответствующей части и распространяют свое действие на использование Пользователем Сайта:</div>
+			<div>5.7.1. Политикаконфиденциальности:</div>
+			<div>5.8. Любой из документов, перечисленных в пункте 5.7.1. настоящего Соглашения может подлежать обновлению. Изменения вступают в силу с момента их опубликования на Сайте.</div>
+			<div>6. ОТВЕТСТВЕННОСТЬ</div>
+			<div>6.1. Любые убытки, которые Пользователь может понести в случае умышленного или неосторожного нарушения любого положения настоящего Соглашения, а также вследствие несанкционированного доступа к коммуникациям другого Пользователя, Администрацией сайта не возмещаются.</div>
+			<div>6.2. Администрация сайта не несет ответственности за:</div>
+			<div>6.2.1. Задержки или сбои в процессе совершения операции, возникшие вследствие непреодолимой силы, а также любого случая неполадок в телекоммуникационных, компьютерных, электрических и иных смежных системах.</div>
+			<div>6.2.2. Действия систем переводов, банков, платежных систем и за задержки связанные с их работой.</div>
+			<div>6.2.3. Надлежащее функционирование Сайта, в случае, если Пользователь не имеет необходимых технических средств для его использования, а также не несет никаких обязательств по обеспечению пользователей такими средствами.</div>
+			<div>7. НАРУШЕНИЕ УСЛОВИЙ ПОЛЬЗОВАТЕЛЬСКОГО СОГЛАШЕНИЯ</div>
+			<div>7.1. Администрация сайта имеет право раскрыть информацию о Пользователе, если действующее законодательство Российской Федерации требует или разрешает такое раскрытие.</div>
+			<div>7.2. Администрация сайта вправе без предварительного уведомления Пользователя прекратить и (или) заблокировать доступ к Сайту, если Пользователь нарушил настоящее Соглашение или содержащиеся в иных документах условия пользования Сайтом, а также в случае прекращения действия Сайта либо по причине технической неполадки или проблемы.</div>
+			<div>7.3. Администрация сайта не несет ответственности перед Пользователем или третьими лицами за прекращение доступа к Сайту в случае нарушения Пользователем любого положения настоящего Соглашения или иного документа, содержащего условия пользования Сайтом.</div>
+			<div>8. РАЗРЕШЕНИЕ СПОРОВ</div>
+			<div>8.1. В случае возникновения любых разногласий или споров между Сторонами настоящего Соглашения обязательным условием до обращения в суд является предъявление претензии (письменного предложения о добровольном урегулировании спора).</div>
+			<div>8.2. Получатель претензии в течение 30 календарных дней со дня ее получения, письменно уведомляет заявителя претензии о результатах рассмотрения претензии.</div>
+			<div>8.3. При невозможности разрешить спор в добровольном порядке любая из Сторон вправе обратиться в суд за защитой своих прав, которые предоставлены им действующим законодательством Российской Федерации.</div>
+			<div>8.4. Любой иск в отношении условий использования Сайта должен быть предъявлен в течение 5 дней после возникновения оснований для иска, за исключением защиты авторских прав на охраняемые в соответствии с законодательством материалы Сайта. При нарушении условий данного пункта любой иск оставляется судом без рассмотрения.</div>
+			<div>9. ДОПОЛНИТЕЛЬНЫЕ УСЛОВИЯ</div>
+			<div>9.1. Администрация сайта не принимает встречные предложения от Пользователя относительно изменений настоящего Пользовательского соглашения.</div>
+			<div>9.2. Отзывы Пользователя, размещенные на Сайте, не являются конфиденциальной информацией и могут быть использованы Администрацией сайта без ограничений. Обновлено «27» сентября 2017 г.</div>
+		</div>
+
+	</div>
+
+
+
+	<div class="backdrop"></div>
+	
+	<script src="js/main.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		window.cookieconsent_options = {"message":"Этот сайт использует файлы cookies, чтобы облегчить вам пользование нашим веб-сайтом. Продолжая использовать этот веб-сайт, вы даете согласие на использование файлов cookies.","dismiss":"Согласен!","learnMore":"","link":null,"theme":"dark-top"};
+	</script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>
+	<style type="text/css">
+		.cc_banner-wrapper{
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+
+		.cc_container .cc_btn, .cc_container .cc_btn:visited{
+			background-color: #db2f2e;
+			color: #fff;
+		}
+	</style>
+	
+	
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>	
+</body>
+</html>
