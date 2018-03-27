@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Umnikov | Master</title>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content=""><!--link(rel="shortcut icon" type="image/x-png" href="static/img/svg/logo.png")	-->	
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900|Open+Sans:300,400,600,700,800&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="static/css/libs.css">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css"><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+    <body>
+      <div class="wrapper">
+        <div id="nav-wrapper">
+          <nav class="navbar navbar-default">
+            <div class="container">
+              <div class="navbar-header">
+                <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">   <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="index.html"><span class="logo-wrapper"><img class="logo-word" src="static/img/general/logo1.svg" alt="Umnikov"><img class="logo-icon" src="static/img/general/logo2.svg" alt="Umnikov"></span></a><a class="cart-mobile" href=""><img src="static/img/general/mobile-cart.svg" alt=""><span class="cart-mobile-quantity-box"><span class="cart-mobile-quantity">3</span></span></a>
+              </div>
+              <div class="nav navbar-nav navbar-right"><a class="phone" href="telto:88005553535">8-800-555-35-35</a>
+                <div class="social"><a class="social-icon-container" href=""><span class="social-icon vk-icon"></span></a><a class="social-icon-container" href=""><span class="social-icon insta-icon"></span></a><a class="social-icon-container" href=""><span class="social-icon youtube-icon"></span></a><a class="social-icon-container" href=""><span class="social-icon fb-icon"></span></a></div>
+              </div>
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"><a class="home-logo" href=""><img src="static/img/general/home-logo.svg" alt="Umnikov"></a>
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="catalog.html">Каталог</a></li>
+                  <li><a href="#">Акции</a></li>
+                  <li><a href="#">Под заказ</a></li>
+                  <li><a href="#">О компании</a></li>
+                  <li><a href="#">Новости</a></li>
+                  <li><a href="#">Оптовикам</a></li>
+                  <li><a href="#">Контакты</a></li>
+                </ul>
+                <div class="cart-box">
+                  <div class="search-box btn-group" id="SearchBar">
+                    <input class="search-field" type="text" oninput="OnInput()" placeholder="Поиск">
+                    <input class="search" type="button">
+                  </div><a class="cart-wrapper" href="">
+                    <div class="cart">корзина</div>
+                    <div class="cart-quantity-container">
+                      <div class="cart-quantity">0</div>
+                    </div></a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <section class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <ol class="breadcrumb"><a class="breadcrumb-prev-btn" href="index.html"></a>
+                <li><a href="index.html">Главная</a></li>
+                <li class="active">Под заказ</li>
+              </ol>
+            </div>
+          </div>
+        </section>
+        <section class="container-fluid master-order-banner">
+          <div class="master-order-banner-wrapper">
+            <h1 class="master-order-banner-title">Кожаные изделия под заказ</h1>
+          </div>
+        </section>
+        <section class="container">
+          <div class="row master-slider-row">
+            <div class="col-sm-6 master-slider-row-info">
+              <h2>Воплотите свою мечту в реальность</h2>
+              <p>Когда товар делается руками, большое внимание уделяется даже мельчайшим деталям. В процессе ручной работы исключается риск создать бракованный товар, потому что каждый шов, каждый стежок – все делается максимально аккуратно.</p>
+            </div>
+            <div class="col-sm-6">
+              <div class="slider-small">
+                <div class="slide"><img src="static/img/content/homepage/slider/small-slider-img.jpg" alt=""><a class="slide-title" href="">Ножны</a></div>
+                <div class="slide"><img src="static/img/content/homepage/slider/small-slider-img.jpg" alt=""><a class="slide-title" href="">Ножны</a></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="tac">Форма заявки на индивидуальный заказ</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+              <div class="indiv-form-wrapper">
+                <div class="indiv-form-title">Об изделии</div>
+                <label class="indiv-form-label" for="appointments">Назначение изделия (кисет, чехол для ружья и.т.п)</label>
+                <input class="indiv-form-input" type="text" id="appointments">
+                <label class="indiv-form-label" for="size">Примерный размер изделия</label>
+                <input class="indiv-form-input" type="text" id="size">
+                <div class="form-skin-wapper">
+                  <div class="filter_block">
+                    <div class="sky-form">
+                      <div class="underform material">
+                        <p class="form-skin-title">Кожа</p>
+                        <div class="block">
+                          <input id="material1" type="radio" name="filter_material" value="krs" checked>
+                          <label for="material1">КРС</label>
+                        </div>
+                        <div class="block">
+                          <input id="material2" type="radio" name="filter_material" value="telenok">
+                          <label for="material2">Телёнок</label>
+                        </div>
+                        <div class="block skin-color-media">
+                          <div class="underform color skin-color-mar">
+                            <input id="color1" type="radio" name="filter_color" value="red">
+                            <label for="color1"><img src="static/img/content/homepage/skin-color/red.png"></label>
+                            <input id="color2" type="radio" name="filter_color" value="green">
+                            <label for="color2"><img src="static/img/content/homepage/skin-color/white.png"></label>
+                            <input id="color3" type="radio" name="filter_color" value="red">
+                            <label for="color3"><img src="static/img/content/homepage/skin-color/black.png"></label>
+                            <input id="color4" type="radio" name="filter_color" value="green">
+                            <label for="color4"><img src="static/img/content/homepage/skin-color/brown.png"></label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="underform color">
+                        <p class="form-skin-title">Цвет прошивки (синий, красный, белый, черный)</p>
+                        <input id="color5" type="radio" name="filter_color_prosh">
+                        <label for="color5">
+                          <div class="color-yellow"></div>
+                        </label>
+                        <input id="color6" type="radio" name="filter_color_prosh">
+                        <label for="color6">
+                          <div class="color-black"></div>
+                        </label>
+                        <input id="color7" type="radio" name="filter_color_prosh">
+                        <label for="color7">
+                          <div class="color-blue"></div>
+                        </label>
+                        <input id="color8" type="radio" name="filter_color_prosh">
+                        <label for="color8">
+                          <div class="color-red"></div>
+                        </label>
+                      </div>
+                      <div class="underform material">
+                        <p class="form-skin-title">Требуется ли тиснение?</p>
+                        <div class="block">
+                          <input id="material3" type="radio" name="filter_material_tisn" value="yes" checked>
+                          <label for="material3">Да</label>
+                        </div>
+                        <div class="block">
+                          <input id="material4" type="radio" name="filter_material_tisn" value="no">
+                          <label for="material4">Нет</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <label class="indiv-form-label" for="form-comment">Ваш комментарий</label>
+                <textarea id="form-comment"></textarea>
+                <div class="indiv-form-title mb-4">Контактные данные</div>
+                <div class="indiv-form-subtitle">Мы не разглашаем контактные данные наших клиентов третьим лицам</div>
+                <label class="indiv-form-label" for="fio">ФИО</label>
+                <input class="indiv-form-input" type="text" id="fio">
+                <label class="indiv-form-label" for="phone">Телефон</label>
+                <input class="indiv-form-input" type="tel" id="phone">
+                <label class="indiv-form-label" for="email">E-mail</label>
+                <input class="indiv-form-input" type="email" id="email">
+                <input class="general-btn yellow-btn" type="submit" value="Отправить заявку">
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="section container-fluid footer-top">
+          <div class="container">
+            <div class="footer-top-wrapper">
+              <div class="footer-top-title">Натяжные потолки в Ярославле</div>
+              <div class="footer-top-text footer-top-text-mar">Компания «Потолочник» специализируется на продаже и установке натяжных потолков в Ярославле. Мы работаем больше 7 лет, стремясь украсить каждый дом, сделать атмосферу уютной в каждой квартире. Основная наша миссия – делать натяжные потолки качественно и аккуратно, проявлять творческий подход и заботиться об экологии каждого дома.</div>
+              <div class="footer-top-text footer-top-text-mar">Ассортимент продукции компания «Потолочник» включает в себя натяжные потолки в Ярославле следующих видов:</div>
+              <div class="footer-top-text">Глянцевые – позволяют сделать отделку потолочного покрытия эффектной. Обладая зеркальной поверхностью, они создают модный дизайн комнат. Благодаря отражающей способности полотна, можно зрительно увеличить объем помещения, что актуально в малогабаритных комнатах. Также полотна позволяют экономить количество и мощность осветительных приборов.</div>
+              <div class="footer-top-text">Матовые – их поверхность выглядит, как традиционные белые меловые потолки, ведь они не отражают блики и свет. Они прекрасно впишутся в помещения различного назначения и стилистического решения. Это классика, которая всегда востребована. Чаще всего их устанавливают в просторных помещениях, где не стоит задача увеличить пространство визуально. Зачастую полотна представлены в пастельных тонах.</div>
+              <div class="footer-top-text">Сатиновые – отличаются незаурядной красочной текстурой, которая точно имитирует ткань. Обладая небольшим эффектом отражения, потолок позволяет создавать красочную игру света. Безукоризненно ровная поверхность выглядит привлекательно как при дневном, так и при искусственном освещении.</div>
+              <div class="footer-top-text">Криволинейная спайка – натяжные потолки позволяют имитировать многоуровневые конструкции, однако без потери высоты помещения. При их обустройстве комбинируют различные по фактуре полотна.</div>
+              <div class="footer-top-text">«Звездное небо» - такого визуального эффекта достигают, сочетая натяжной потолок и современные технологии освещения.</div>
+              <div class="footer-top-text">Тканевые – позволяют создавать бесшовные конструкции. Цветовой ассортимент полотен небогат, однако это компенсируется возможностью их неоднократно окрашивать.</div>
+              <div class="footer-top-text">Фотопечать – это возможность создавать в помещении неповторимый дизайн. Такие натяжные потолки в Ярославле привлекают тех, кто хочет визуально увеличить помещение, сделать интерьер эксклюзивным.</div>
+              <div class="footer-top-text">Двухуровневые – подходят для высоких и просторных помещений. Они способны изменить геометрию комнаты, зонировать пространство.</div>
+              <div class="footer-top-text">«Парящий потолок» - позволяет создавать ощущение потолка, зависшего в воздухе, что выглядит неожиданно и уникально.</div>
+              <div class="footer-top-text">«Интим потолок» - дает возможность обойтись без торшеров и прочих ночных подсветок, ведь при включении начинает светиться.</div>
+              <div class="footer-top-text">С замшевой фактурой – имеют богатую фактуру, имитирующую замшу. Эти натяжные потолки на официальном сайте следует купить, чтобы придать помещению благородства, солидности, подчеркнуть изысканный интерьер.</div>
+              <div class="footer-top-text">Полупрозрачные – способны пропускать до 50% света. Поэтому такой потолок зачастую делают с подсветкой, размещенной под пленкой.</div>
+              <div class="footer-top-text">3D потолки – делают замкнутое пространство живым и открытым, раздвигают границы, вызывая неподдельный восторг.</div>
+            </div>
+          </div>
+        </div>
+        <div class="section container-fluid footer-bottom">
+          <div class="container">
+            <div class="col-md-3 col-md-offset-1 col-sm-3 section-mar"><a href="index.html"><img class="footer-logo" src="static/img/general/footer-logo.svg" alt="Umnikov"><img class="footer-logo-icon" src="static/img/general/footer-logo-icon.svg" alt="Umnikov"></a>
+              <div class="address footer-font">Адрес:<br /><span>г. Ярославль, ул. Свободы, д. 55</span></div>
+              <div class="email footer-font">E-mail<br /><a href="emailto:1@umnikov.ru">1@umnikov.ru</a></div>
+              <div class="footer-phone footer-font">Телефон<br /><a href="telto:8-800-555-35-35">8-800-555-35-35</a></div>
+            </div>
+            <div class="col-md-2 col-sm-2 section-mar">
+              <div class="sections">Разделы</div>
+              <div class="sections-wrap"><a class="footer-font" href="">Каталог</a><a class="footer-font" href="">Акции</a><a class="footer-font" href="">Под заказ</a><a class="footer-font" href="">О компании</a><a class="footer-font" href="">Новости</a><a class="footer-font" href="">Оптовикам</a><a class="footer-font" href="">Контакты</a></div>
+            </div>
+            <div class="col-md-3 col-sm-3 section-mar">
+              <div class="sections">Информация</div>
+              <div class="sections-wrap"><a class="footer-font" href="">Способы оплаты</a><a class="footer-font" href="">Доставка</a><a class="footer-font" href="">Гарантия качества</a></div>
+            </div>
+            <div class="col-md-3 col-sm-4 section-mar tac">
+              <div class="sections">Социальные сети</div>
+              <div class="social social-footer"><a class="social-footer__icon-container" href=""><span class="social-icon vk-icon"></span></a><a class="social-footer__icon-container" href=""><span class="social-icon insta-icon"></span></a><a class="social-footer__icon-container" href=""><span class="social-icon youtube-icon"></span></a><a class="social-footer__icon-container" href=""><span class="social-icon fb-icon"></span></a></div>
+            </div>
+            <div class="col-md-12 col-sm-12">
+              <div class="privacy"><a href="">Политика конфиденциальности</a><a class="sitemap" href="">Sitemap</a><a href="">Сайт разработан студией «Папин сайт»</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="static/js/jquery.js"></script>
+      <script src="static/js/libs.min.js"></script>
+      <script src="static/js/main.js"></script>
+    </body>
+  </head>
+</html>

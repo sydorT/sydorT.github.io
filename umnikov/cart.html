@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Umnikov | Cart</title>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content=""><!--link(rel="shortcut icon" type="image/x-png" href="static/img/svg/logo.png")	-->	
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900|Open+Sans:300,400,600,700,800&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="static/css/libs.css">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css"><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+    <body>
+      <div class="wrapper">
+        <div id="nav-wrapper">
+          <nav class="navbar navbar-default">
+            <div class="container">
+              <div class="navbar-header">
+                <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">   <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="index.html"><span class="logo-wrapper"><img class="logo-word" src="static/img/general/logo1.svg" alt="Umnikov"><img class="logo-icon" src="static/img/general/logo2.svg" alt="Umnikov"></span></a><a class="cart-mobile" href=""><img src="static/img/general/mobile-cart.svg" alt=""><span class="cart-mobile-quantity-box"><span class="cart-mobile-quantity">3</span></span></a>
+              </div>
+              <div class="nav navbar-nav navbar-right"><a class="phone" href="telto:88005553535">8-800-555-35-35</a>
+                <div class="social"><a class="social-icon-container" href=""><span class="social-icon vk-icon"></span></a><a class="social-icon-container" href=""><span class="social-icon insta-icon"></span></a><a class="social-icon-container" href=""><span class="social-icon youtube-icon"></span></a><a class="social-icon-container" href=""><span class="social-icon fb-icon"></span></a></div>
+              </div>
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"><a class="home-logo" href=""><img src="static/img/general/home-logo.svg" alt="Umnikov"></a>
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="catalog.html">Каталог</a></li>
+                  <li><a href="#">Акции</a></li>
+                  <li><a href="#">Под заказ</a></li>
+                  <li><a href="#">О компании</a></li>
+                  <li><a href="#">Новости</a></li>
+                  <li><a href="#">Оптовикам</a></li>
+                  <li><a href="#">Контакты</a></li>
+                </ul>
+                <div class="cart-box">
+                  <div class="search-box btn-group" id="SearchBar">
+                    <input class="search-field" type="text" oninput="OnInput()" placeholder="Поиск">
+                    <input class="search" type="button">
+                  </div><a class="cart-wrapper" href="">
+                    <div class="cart">корзина</div>
+                    <div class="cart-quantity-container">
+                      <div class="cart-quantity">0</div>
+                    </div></a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <section class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <ol class="breadcrumb"><a class="breadcrumb-prev-btn" href="index.html"></a>
+                <li><a href="index.html">Главная</a></li>
+                <li class="active">Корзина</li>
+              </ol>
+            </div>
+            <div class="col-md-12">
+              <h1 class="cart-header">Корзина</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1 cart-page">
+              <div class="popup-product-wrapper clearfix">
+                <div class="cart-close-btn"></div>
+                <div class="popup-product-left">
+                  <div class="popup-product-img"><img src="static/img/content/homepage/slider/bag.jpg" alt=""></div>
+                  <div class="popup-product-info">
+                    <div class="popup-product-title">Альдебаран</div>
+                    <div class="popup-product-cat">Сумка</div>
+                  </div>
+                </div>
+                <div class="popup-product-right">
+                  <div class="popup-product-option">
+                    <div class="popup-center-wrap">
+                      <div class="skin-option">Кожа: <span>Телёнок </span><span class="option-color skin-color"></span></div>
+                      <div class="firmware">Прошивка: <span class="option-color firmware-color"></span></div>
+                      <div class="impression">Тиснение: <span>не выбрано</span></div><a class="popup-option-comment" href="">Комментарий к товару</a>
+                      <div class="packaging-wrapper">
+                        <input class="cart-input" type="checkbox" id="check_cart" name="check_cart" value="check_cart">
+                        <label class="cart-label" for="check_cart">Подарочная упаковка</label>
+                        <div class="info-block">
+                          <div class="info-block-content">і</div>
+                        </div>
+                        <div class="packaging-modal">
+                          <div class="packaging-modal-title">Подарочная упаковка</div><img class="packaging-modal-img" src="static/img/content/product/packaging-gift.jpg" alt="">
+                          <div class="packaging-modal-info">Вручную изготовленная коробка из фанеры под размеры товара с логотипом UMNIKOV</div>
+                          <div class="packaging-modal-price">+ 1200 Р</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cart-price-block">
+                    <div class="popup-product-price">1599000 Р</div>
+                    <div class="quantity-container-wrapper">
+                      <div class="quantity-container minus"><span>-</span></div>
+                      <input class="quantity-number" type="text" value="1">
+                      <div class="quantity-container plus">+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="popup-product-wrapper clearfix">
+                <div class="cart-close-btn"></div>
+                <div class="popup-product-left">
+                  <div class="popup-product-img"><img src="static/img/content/homepage/slider/bag.jpg" alt=""></div>
+                  <div class="popup-product-info">
+                    <div class="popup-product-title">Альдебаран</div>
+                    <div class="popup-product-cat">Сумка</div>
+                  </div>
+                </div>
+                <div class="popup-product-right">
+                  <div class="popup-product-option">
+                    <div class="popup-center-wrap">
+                      <div class="skin-option">Кожа: <span>Телёнок </span><span class="option-color skin-color"></span></div>
+                      <div class="firmware">Прошивка: <span class="option-color firmware-color"></span></div>
+                      <div class="impression">Тиснение: <span>не выбрано</span></div><a class="popup-option-comment" href="">Комментарий к товару</a>
+                      <div class="packaging-wrapper">
+                        <input class="cart-input" type="checkbox" id="check_cart" name="check_cart" value="check_cart">
+                        <label class="cart-label" for="check_cart">Подарочная упаковка</label>
+                        <div class="info-block">
+                          <div class="info-block-content">і</div>
+                        </div>
+                        <div class="packaging-modal">
+                          <div class="packaging-modal-title">Подарочная упаковка</div><img class="packaging-modal-img" src="static/img/content/product/packaging-gift.jpg" alt="">
+                          <div class="packaging-modal-info">Вручную изготовленная коробка из фанеры под размеры товара с логотипом UMNIKOV</div>
+                          <div class="packaging-modal-price">+ 1200 Р</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cart-price-block">
+                    <div class="popup-product-price">1599000 Р</div>
+                    <div class="quantity-container-wrapper">
+                      <div class="quantity-container minus"><span>-</span></div>
+                      <input class="quantity-number" type="text" value="1">
+                      <div class="quantity-container plus">+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="popup-product-wrapper clearfix">
+                <div class="cart-close-btn"></div>
+                <div class="popup-product-left">
+                  <div class="popup-product-img"><img src="static/img/content/homepage/slider/bag.jpg" alt=""></div>
+                  <div class="popup-product-info">
+                    <div class="popup-product-title">Альдебаран</div>
+                    <div class="popup-product-cat">Сумка</div>
+                  </div>
+                </div>
+                <div class="popup-product-right">
+                  <div class="popup-product-option">
+                    <div class="popup-center-wrap">
+                      <div class="skin-option">Кожа: <span>Телёнок </span><span class="option-color skin-color"></span></div>
+                      <div class="firmware">Прошивка: <span class="option-color firmware-color"></span></div>
+                      <div class="impression">Тиснение: <span>не выбрано</span></div><a class="popup-option-comment" href="">Комментарий к товару</a>
+                      <div class="packaging-wrapper">
+                        <input class="cart-input" type="checkbox" id="check_cart" name="check_cart" value="check_cart">
+                        <label class="cart-label" for="check_cart">Подарочная упаковка</label>
+                        <div class="info-block">
+                          <div class="info-block-content">і</div>
+                        </div>
+                        <div class="packaging-modal">
+                          <div class="packaging-modal-title">Подарочная упаковка</div><img class="packaging-modal-img" src="static/img/content/product/packaging-gift.jpg" alt="">
+                          <div class="packaging-modal-info">Вручную изготовленная коробка из фанеры под размеры товара с логотипом UMNIKOV</div>
+                          <div class="packaging-modal-price">+ 1200 Р</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cart-price-block">
+                    <div class="popup-product-price">1599000 Р</div>
+                    <div class="quantity-container-wrapper">
+                      <div class="quantity-container minus"><span>-</span></div>
+                      <input class="quantity-number" type="text" value="1">
+                      <div class="quantity-container plus">+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <div class="summ-order-wrapper clearfix"><span class="summ-order-title">Сумма заказа: </span><span class="summ-order-price">1599000 Р</span></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+              <div class="order-form">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="order-form-header">Оформление заказа</div>
+                  </div>
+                  <div class="col-md-6 col-sm-6 pr-10">
+                    <div class="order-form-title">Доставка</div>
+                    <input type="text" placeholder="Город">
+                    <div class="select-wrapper">
+                      <select>
+                        <option>Способ доставки</option>
+                        <option>Самовывоз</option>
+                        <option>Почта России</option>
+                      </select>
+                    </div>
+                    <input type="text" placeholder="Индекс">
+                    <input type="text" placeholder="Адрес доставки">
+                    <div class="order-form-title">Способ оплаты</div>
+                    <div class="select-wrapper">
+                      <select>
+                        <option>Наличный</option>
+                        <option>По карте</option>
+                      </select>
+                    </div>
+                    <div class="callback-text">Мы перезвоним вам в течение 30 минут для уточнения деталей заказа</div>
+                    <div class="order-privacy">Оформляя заказ, вы соглашаетесь с условиями<br /><a href="">политики конфиденциальности</a></div>
+                  </div>
+                  <div class="col-md-6 col-sm-6 pl-10">
+                    <div class="order-form-title">Общая информация</div>
+                    <input type="tel" placeholder="Контактный телефон">
+                    <input type="text" placeholder="Фамилия, Имя, Отчество">
+                    <input type="email" placeholder="Электронная почта">
+                    <textarea placeholder="Комментарий к заказу"></textarea>
+                    <input type="submit" value="Оформить заказ">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="section container-fluid footer-bottom">
+          <div class="container">
+            <div class="col-md-3 col-md-offset-1 col-sm-3 section-mar"><a href="index.html"><img class="footer-logo" src="static/img/general/footer-logo.svg" alt="Umnikov"><img class="footer-logo-icon" src="static/img/general/footer-logo-icon.svg" alt="Umnikov"></a>
+              <div class="address footer-font">Адрес:<br /><span>г. Ярославль, ул. Свободы, д. 55</span></div>
+              <div class="email footer-font">E-mail<br /><a href="emailto:1@umnikov.ru">1@umnikov.ru</a></div>
+              <div class="footer-phone footer-font">Телефон<br /><a href="telto:8-800-555-35-35">8-800-555-35-35</a></div>
+            </div>
+            <div class="col-md-2 col-sm-2 section-mar">
+              <div class="sections">Разделы</div>
+              <div class="sections-wrap"><a class="footer-font" href="">Каталог</a><a class="footer-font" href="">Акции</a><a class="footer-font" href="">Под заказ</a><a class="footer-font" href="">О компании</a><a class="footer-font" href="">Новости</a><a class="footer-font" href="">Оптовикам</a><a class="footer-font" href="">Контакты</a></div>
+            </div>
+            <div class="col-md-3 col-sm-3 section-mar">
+              <div class="sections">Информация</div>
+              <div class="sections-wrap"><a class="footer-font" href="">Способы оплаты</a><a class="footer-font" href="">Доставка</a><a class="footer-font" href="">Гарантия качества</a></div>
+            </div>
+            <div class="col-md-3 col-sm-4 section-mar tac">
+              <div class="sections">Социальные сети</div>
+              <div class="social social-footer"><a class="social-footer__icon-container" href=""><span class="social-icon vk-icon"></span></a><a class="social-footer__icon-container" href=""><span class="social-icon insta-icon"></span></a><a class="social-footer__icon-container" href=""><span class="social-icon youtube-icon"></span></a><a class="social-footer__icon-container" href=""><span class="social-icon fb-icon"></span></a></div>
+            </div>
+            <div class="col-md-12 col-sm-12">
+              <div class="privacy"><a href="">Политика конфиденциальности</a><a class="sitemap" href="">Sitemap</a><a href="">Сайт разработан студией «Папин сайт»</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="static/js/jquery.js"></script>
+      <script src="static/js/libs.min.js"></script>
+      <script src="static/js/main.js"></script>
+    </body>
+  </head>
+</html>
