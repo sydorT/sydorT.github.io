@@ -18,6 +18,7 @@ $(document).ready(function () {
             }
             $('.top-btn').removeClass('active');
             $('.chatbot__wrapper').removeClass('active');
+            $('.chatbot__wrapper').css('z-index', '31');
             $('.chatbot').removeClass('active');
             $('.chatbot__message').fadeOut();
         }
@@ -36,6 +37,7 @@ $(document).ready(function () {
 
     $('.chatbot').click(function () {
         $('.chatbot__message').fadeIn('800');
+        $('.chatbot__wrapper').css('z-index','32');
     });
 
     $('.top-btn').click(function () {
