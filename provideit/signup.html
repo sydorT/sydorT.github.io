@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Sign Up</title>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0,user-scalable=0">
+    <meta name="keywords" content=""><!--link(rel="shortcut icon" type="image/x-png" href="static/img/svg/logo.png")	-->	
+    <link rel="stylesheet" type="text/css" href="static/css/bootstrap4-grid.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="static/css/main-ltr.css"><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="login sign">
+        <div class="login__sidebar">
+          <div class="login__sidebar-heading"><a href="index.html"><img class="login__sidebar-logo" src="static/img/logo-white.png" alt="Provide It"></a><span>Simple, smart & scalable<br />Tenders management tool</span></div>
+        </div>
+        <div class="login__wrapper">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-6 offset-xl-6 col-lg-7 offset-lg-5">
+                <h1 class="confirmation__title">Sign Up</h1>
+                <div class="login__subtitle">Fill up the sign up form below and<span>Let’s Get Started </span></div>
+                <form class="login__form" action="" novalidate>
+                  <div class="contact__input-holder">
+                    <div class="field">
+                      <input id="first-name" type="text" placeholder="Type your First Name">
+                      <label for="first-name">First Name *</label>
+                    </div>
+                    <div class="field">
+                      <input id="last-name" type="text" placeholder="Type your Last Name">
+                      <label for="last-name">Last Name *</label>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <input id="email" type="email" placeholder="Type your email">
+                    <label for="email">Email *</label>
+                  </div>
+                  <div class="field">
+                    <input id="password" type="password" placeholder="Type your password">
+                    <label for="password">Password *</label>
+                  </div>
+                  <div class="field">
+                    <input type="password" placeholder="Confirm your password">
+                    <label for="password">Confirm Password *</label>
+                  </div>
+                  <div class="sign__plan">
+                    <div class="sign__plan-title">Choose Plan</div>
+                    <div class="row">
+                      <div class="col-12 col-sm">
+                        <div class="plan__card-wrapper">
+                          <input id="standart" type="radio" name="plan">
+                          <label class="plan__card" for="standart">
+                            <div class="plan__card-topline plan__card-topline--green"></div>
+                            <div class="plan__card-title">Standard</div>
+                            <div class="plan__card-subtitle">3 Months</div>
+                            <div class="plan__card-price plan__card-price--green">AED 1500</div>
+                            <div class="plan__card-separator"></div>
+                            <ul class="plan__card-list">
+                              <li>Billed quarterly.</li>
+                              <li>20 minimum Tenders.</li>
+                              <li>24 hours of coverage.</li>
+                              <li>7 days a week.</li>
+                              <li>Less expensive.</li>
+                            </ul>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm">
+                        <div class="plan__card-wrapper">
+                          <input id="premium" type="radio" name="plan">
+                          <label class="plan__card" for="premium">
+                            <div class="plan__card-topline plan__card-topline--light-blue"></div>
+                            <div class="plan__card-title">Premium</div>
+                            <div class="plan__card-subtitle">6 Months</div>
+                            <div class="plan__card-price plan__card-price--light-blue">AED 3000</div>
+                            <div class="plan__card-separator"></div>
+                            <ul class="plan__card-list plan__card-list--light-blue">
+                              <li>Billed every six months.</li>
+                              <li>200 minimum Tenders.</li>
+                              <li>24 hours of coverage.</li>
+                              <li>7 days a week.</li>
+                              <li>Most valued.</li>
+                            </ul>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm">
+                        <div class="plan__card-wrapper">
+                          <input id="elite" type="radio" name="plan">
+                          <label class="plan__card" for="elite">
+                            <div class="plan__card-topline plan__card-topline--blue"></div>
+                            <div class="plan__card-title">Elite</div>
+                            <div class="plan__card-subtitle">12 Months</div>
+                            <div class="plan__card-price plan__card-price--blue">AED 7000</div>
+                            <div class="plan__card-separator"></div>
+                            <ul class="plan__card-list plan__card-list--blue">
+                              <li>Billed yearly.</li>
+                              <li>500 minimum Tenders.</li>
+                              <li>24 hours of coverage.</li>
+                              <li>7 days a week.</li>
+                              <li>For Big Enterprises.</li>
+                            </ul>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contact__checkbox-holder">
+                    <input id="terms" type="checkbox">
+                    <label for="terms">Agree Sign Up Terms & Conditions.</label>
+                  </div>
+                  <button class="btn__img" type="submit">Sign Up<img src="static/img/icons/arrow-btn.svg" alt=""></button>
+                  <div class="sign__member">Already a memeber, Click here to <a class="login__link" href="login.html">Log In</a></div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="static/js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>
