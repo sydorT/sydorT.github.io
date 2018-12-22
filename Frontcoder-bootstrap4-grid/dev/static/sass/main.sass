@@ -12,7 +12,7 @@ html
   height: 100%
 
 body
-  font-family: $basic-font
+  font-family: $basic-font, sans-serif
   color: #000
   height: 100%
   min-width: 320px
@@ -64,6 +64,10 @@ button
 *, *:before, *:after
   box-sizing: border-box
 
+.wrapper
+  max-width: 1920px
+  margin: 0 auto
+
 .fixed
   position: fixed
   width: 100%
@@ -79,6 +83,9 @@ input[type=number]::-webkit-outer-spin-button
   margin: 0
 input[type="submit"]
   appearance: none
+  border: none
+  border-radius: 0
+  cursor: pointer
 
 // Общие стили
 @import 'common-styles'
